@@ -1,3 +1,4 @@
+package main;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +8,7 @@ import java.net.URL;
  *
  * @author Kushal
  *
- * This class implements methods to access a text file at the specified URL and return its contents in a String.
+ * This class implements a method to access a text file at the specified URL and return its contents in a String.
  *
  */
 public abstract class ImportConnector {
