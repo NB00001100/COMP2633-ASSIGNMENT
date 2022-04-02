@@ -29,10 +29,10 @@ public abstract class ImportConnector {
             String currLine;
             while ((currLine = in.readLine()) != null) {
                 contents.append(currLine);
-                contents.append(System.lineSeparator());
+                contents.append("\n");
             }
 
-            return contents.toString();
+            return contents.toString().trim();
 
         } catch(IOException ex) {
             System.err.println("Error occured while accessing or reading file at address: " + address);
