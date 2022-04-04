@@ -16,7 +16,7 @@ class ImportConnectorTest {
                 + "\n"
                 + "line 4";
 
-        String address = "https://raw.githubusercontent.com/NB00001100/COMP2633-ASSIGNMENT/main/res/TestFile1.txt?token=GHSAT0AAAAAABSXPZGCFGTUTZWJL55HMXWOYSLMLCA";
+        String address = "https://raw.githubusercontent.com/NB00001100/COMP2633-ASSIGNMENT/main/res/TestFile1.txt?token=GHSAT0AAAAAABSXPZGDZJX2CJAABJGCLJWIYSLNKKA";
         String fromFile = ImportConnector.getTextFromURL(address);
 
         for (int i = 0; i < fromFile.length(); i++) {
