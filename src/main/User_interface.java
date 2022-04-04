@@ -1,9 +1,7 @@
 import java.io.PrintStream;
 import java.util.Scanner;
 
-
-// author: Nimrat Brar,add names
-
+// author Nimrat Brar, add names
 
 public class User_interface {
 
@@ -48,6 +46,7 @@ public class User_interface {
             System.err.println(" Please reload the application or Contact Team KPN  ");
         }
 
+        input.close();
         login();
 
         return;
@@ -56,9 +55,7 @@ public class User_interface {
     }
     public static boolean student_interface() {
 
-        DataStore student = null;
-        // need to reference to hashmap not sure if it is correct
-        // implementation
+
 
 
         PrintStream output = new PrintStream(System.out);
@@ -66,29 +63,29 @@ public class User_interface {
 
         int look_at_courses = 0;
 
-        show_student_info(output,student);
+        show_student_info(output);
 
         look_at_courses = input.nextInt();
 
         if(look_at_courses == 1)
        {
            // shows current courses taken
-           show_courses(student.studentStorage.get(getUser_id()).getCurrentCourses(), output);
+           show_courses(DataStore.getStudentStorage().get(getUser_id()).getCurrentCourses(), output);
        }
        else if(look_at_courses == 2)
        {
            // show previous courses
-           show_courses(student.studentStorage.get(getUser_id()).getPastCourses(), output);
+           show_courses(DataStore.getStudentStorage().get(getUser_id()).getPastCourses(), output);
        }
        else if(look_at_courses == 3)
        {
            // view outstanding fees
-           show_fees(student.studentStorage.get(getUser_id()).getOutstandingFees(),output);
+           show_fees(DataStore.getStudentStorage().get(getUser_id()).getOutstandingFees(),output);
        }
        else if(look_at_courses == 4)
        {
            // view paid fees
-           show_fees(student.studentStorage.get(getUser_id()).getPaidFees(),output);
+           show_fees(DataStore.getStudentStorage().get(getUser_id()).getPaidFees(),output);
 
        }
        else if( look_at_courses == 8)
@@ -108,7 +105,7 @@ public class User_interface {
 
     public static void login()
     {
-        Login user = null; // may have reference problem
+        Login user = new Login(); // may have reference problem
 
         if(user.attemptLogin(user_id, user_password) && user.getUserIsAdmin() == false)
         {
@@ -167,21 +164,21 @@ public class User_interface {
         return;
     }
 
-    public static void show_student_info(PrintStream output, DataStore student)
+    public static void show_student_info(PrintStream output)
     {
         output.println();
         output.println();
         output.print(" Name: ");
-        output.println(student.studentStorage.get(getUser_id()).getName());
+        output.println(DataStore.getStudentStorage().get(getUser_id()).getName());
         output.println();
         output.print(" Student ID: ");
-        output.println(student.studentStorage.get(getUser_id()).getStudentID());
+        output.println(DataStore.getStudentStorage().get(getUser_id()).getStudentID());
         output.println();
         output.print(" Major: ");
-        output.println(student.studentStorage.get(getUser_id()).getMajor());
+        output.println(DataStore.getStudentStorage().get(getUser_id()).getMajor());
         output.println();
         output.print(" GPA: ");
-        output.println(student.studentStorage.get(getUser_id()).getGpa());
+        output.println(DataStore.getStudentStorage().get(getUser_id()).getGpa());
         output.println();
         output.println();
         output.println(" To view current courses enter: 1");
