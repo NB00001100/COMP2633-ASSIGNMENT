@@ -21,9 +21,22 @@ public  class DataStore {
       return foundStudent;
   }
 
-  public static void addStudentFromAdmin(String major, String password, float gpa, int iD,
-           String courseName, int courseId, String feeName, int feeAmount)
+  public static void addStudentFromAdmin(String major, String password, String name, float gpa, int iD, Course [] curr,
+           Course [] past, Fees [] outstanding, Fees [] paid)
   {
+      Student new_student = new Student();
+
+      new_student.setName(name);
+      new_student.setMajor(major);
+      new_student.setGpa(gpa);
+      new_student.setPassword(password);
+      new_student.setStudentID(iD);
+      new_student.setCurrentCourses(curr);
+      new_student.setPastCourses(past);
+      new_student.setOutstandingFees(outstanding);
+      new_student.setPaidFees(paid);
+
+
 
 
   }
