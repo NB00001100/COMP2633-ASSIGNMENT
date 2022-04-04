@@ -1,3 +1,4 @@
+
 // author: Nimrat Brar, add names
 
 public class Login {
@@ -16,7 +17,7 @@ public class Login {
     {
         boolean id_in_sys = false;
         boolean password_in_sys = false;
-        DataStore check = null;
+        DataStore check = new DataStore();
 
         if(ID > 200000) // student id is greater than 200000
         {
@@ -26,7 +27,7 @@ public class Login {
                id_in_sys = true;
 
            }
-           if(check.studentStorage.containsValue(check.studentStorage.get(ID).getPassword().compareTo(password)) == true) // might have errors
+           if(check.studentStorage.get(ID).getPassword().equals(password) == true) // might have errors
            {
                password_in_sys = true;
            }
@@ -44,7 +45,7 @@ public class Login {
                 id_in_sys = true;
 
             }
-            if(check.adminStorage.containsValue(check.adminStorage.get(ID).getAdminPassword().compareTo(password)) == true) // might have errors
+            if(check.adminStorage.get(ID).getAdminPassword().equals(password)== true) // might have errors
             {
                 password_in_sys = true;
             }
