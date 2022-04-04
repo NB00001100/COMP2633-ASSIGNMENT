@@ -21,8 +21,8 @@ public  class DataStore {
       return foundStudent;
   }
 
-  public static void addStudentFromAdmin(String major, String password, float gpa, int iD,
-           String courseName, int courseId, String feeName, int feeAmount)
+  public static void addStudentFromAdmin(String major, String password, float gpa, int iD, Course [] curr,
+           Course [] past, Fees [] outstanding, Fees [] paid)
   {
 
 
