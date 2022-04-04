@@ -16,6 +16,48 @@ public class Student {
 
 
 
+    public void intializeArrays(Fees [] outStandingFees, Fees [] paidFees, Course [] currentCourses, Course [] pastCourses)
+    {
+        int outStandingFeesCounter = 0;
+        int feesPaidCounter = 0;
+        int currentCoursesCounter = 0;
+        int pastCoursesCounter = 0;
+
+        while(outStandingFeesCounter < outStandingFees.length)
+        {
+            outStandingFees[outStandingFeesCounter] = null;
+
+            outStandingFeesCounter++;
+
+        }
+
+        while(feesPaidCounter < paidFees.length)
+        {
+            paidFees[feesPaidCounter] = null;
+
+            feesPaidCounter++;
+
+        }
+
+        while( currentCoursesCounter < currentCourses.length)
+        {
+            currentCourses[currentCoursesCounter] = null;
+
+            currentCoursesCounter++;
+
+        }
+
+        while( pastCoursesCounter < pastCourses.length)
+        {
+            pastCourses[pastCoursesCounter] = null;
+
+            pastCoursesCounter++;
+
+        }
+
+
+        }
+
     public int getGpa() {
         return gpa;
     }
@@ -87,3 +129,4 @@ public class Student {
 
 
 }
+
