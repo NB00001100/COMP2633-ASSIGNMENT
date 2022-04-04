@@ -1,599 +1,599 @@
-200000 first last0 ComputerScience 4.0 KPN 
-courseName0, 0;courseName1, 1;courseName0, 0;
-courseName1, 1;courseName2, 2;courseName2, 2;
-feeName1, 1;feeName3, 3;feeName3, 3;
-feeName3, 3;feeName0, 0;feeName1, 1;
-
-200001 first last1 Biology 1.0 KPN 
-courseName1, 1;courseName0, 0;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName1, 1;feeName2, 2;feeName1, 1;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200002 first last2 ComputerScience 1.0 KPN 
-courseName3, 3;courseName0, 0;courseName0, 0;
-courseName3, 3;courseName2, 2;courseName2, 2;
-feeName2, 2;feeName3, 3;feeName1, 1;
-feeName3, 3;feeName3, 3;feeName1, 1;
-
-200003 first last3 ComputerScience 1.0 KPN 
-courseName1, 1;courseName0, 0;courseName1, 1;
-courseName3, 3;courseName3, 3;courseName0, 0;
-feeName3, 3;feeName0, 0;feeName1, 1;
-feeName0, 0;feeName2, 2;feeName1, 1;
-
-200004 first last4 Biology 2.0 KPN 
-courseName0, 0;courseName2, 2;courseName0, 0;
-courseName1, 1;courseName3, 3;courseName0, 0;
-feeName2, 2;feeName2, 2;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200005 first last5 ComputerScience 0.0 KPN 
-courseName0, 0;courseName0, 0;courseName1, 1;
-courseName2, 2;courseName2, 2;courseName2, 2;
-feeName3, 3;feeName3, 3;feeName3, 3;
-feeName2, 2;feeName3, 3;feeName3, 3;
-
-200006 first last6 ComputerScience 3.0 KPN 
-courseName3, 3;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName0, 0;feeName0, 0;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName0, 0;
-
-200007 first last7 ComputerScience 0.0 KPN 
-courseName0, 0;courseName3, 3;courseName2, 2;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName3, 3;feeName1, 1;feeName3, 3;
-feeName0, 0;feeName1, 1;feeName3, 3;
-
-200008 first last8 Biology 1.0 KPN 
-courseName2, 2;courseName3, 3;courseName2, 2;
-courseName1, 1;courseName1, 1;courseName0, 0;
-feeName0, 0;feeName1, 1;feeName0, 0;
-feeName3, 3;feeName3, 3;feeName3, 3;
-
-200009 first last9 ComputerScience 0.0 KPN 
-courseName3, 3;courseName2, 2;courseName0, 0;
-courseName2, 2;courseName0, 0;courseName2, 2;
-feeName1, 1;feeName0, 0;feeName3, 3;
-feeName0, 0;feeName3, 3;feeName0, 0;
-
-200010 first last10 Bussiness 0.0 KPN 
-courseName2, 2;courseName0, 0;courseName1, 1;
-courseName3, 3;courseName2, 2;courseName3, 3;
-feeName1, 1;feeName0, 0;feeName2, 2;
-feeName2, 2;feeName3, 3;feeName1, 1;
-
-200011 first last11 Bussiness 2.0 KPN 
-courseName3, 3;courseName1, 1;courseName2, 2;
-courseName1, 1;courseName3, 3;courseName1, 1;
-feeName3, 3;feeName0, 0;feeName3, 3;
-feeName3, 3;feeName3, 3;feeName2, 2;
-
-200012 first last12 Bussiness 0.0 KPN 
-courseName2, 2;courseName1, 1;courseName2, 2;
-courseName3, 3;courseName3, 3;courseName2, 2;
-feeName1, 1;feeName0, 0;feeName3, 3;
-feeName0, 0;feeName3, 3;feeName3, 3;
-
-200013 first last13 Biology 2.0 KPN 
-courseName3, 3;courseName2, 2;courseName0, 0;
-courseName1, 1;courseName0, 0;courseName2, 2;
-feeName2, 2;feeName1, 1;feeName3, 3;
-feeName0, 0;feeName0, 0;feeName1, 1;
-
-200014 first last14 Bussiness 4.0 KPN 
-courseName2, 2;courseName2, 2;courseName2, 2;
-courseName1, 1;courseName2, 2;courseName1, 1;
-feeName3, 3;feeName1, 1;feeName0, 0;
-feeName1, 1;feeName3, 3;feeName2, 2;
-
-200015 first last15 Biology 2.0 KPN 
-courseName3, 3;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName2, 2;courseName2, 2;
-feeName3, 3;feeName3, 3;feeName3, 3;
-feeName3, 3;feeName0, 0;feeName3, 3;
-
-200016 first last16 Bussiness 1.0 KPN 
-courseName3, 3;courseName1, 1;courseName0, 0;
-courseName3, 3;courseName0, 0;courseName1, 1;
-feeName1, 1;feeName3, 3;feeName2, 2;
-feeName1, 1;feeName1, 1;feeName3, 3;
-
-200017 first last17 Bussiness 0.0 KPN 
-courseName3, 3;courseName3, 3;courseName3, 3;
-courseName0, 0;courseName3, 3;courseName1, 1;
-feeName3, 3;feeName3, 3;feeName2, 2;
-feeName0, 0;feeName0, 0;feeName3, 3;
-
-200018 first last18 Biology 1.0 KPN 
-courseName2, 2;courseName0, 0;courseName1, 1;
-courseName2, 2;courseName2, 2;courseName0, 0;
-feeName2, 2;feeName0, 0;feeName1, 1;
-feeName3, 3;feeName1, 1;feeName1, 1;
-
-200019 first last19 ComputerScience 2.0 KPN 
-courseName1, 1;courseName0, 0;courseName2, 2;
-courseName1, 1;courseName1, 1;courseName3, 3;
-feeName3, 3;feeName0, 0;feeName3, 3;
-feeName0, 0;feeName1, 1;feeName1, 1;
-
-200020 first last20 Bussiness 0.0 KPN 
-courseName3, 3;courseName0, 0;courseName2, 2;
-courseName1, 1;courseName2, 2;courseName1, 1;
-feeName3, 3;feeName3, 3;feeName0, 0;
-feeName1, 1;feeName1, 1;feeName2, 2;
-
-200021 first last21 ComputerScience 3.0 KPN 
-courseName3, 3;courseName2, 2;courseName2, 2;
-courseName2, 2;courseName2, 2;courseName2, 2;
-feeName1, 1;feeName2, 2;feeName0, 0;
-feeName2, 2;feeName2, 2;feeName1, 1;
-
-200022 first last22 Bussiness 3.0 KPN 
-courseName0, 0;courseName1, 1;courseName3, 3;
-courseName2, 2;courseName2, 2;courseName2, 2;
-feeName3, 3;feeName0, 0;feeName1, 1;
-feeName3, 3;feeName2, 2;feeName2, 2;
-
-200023 first last23 Bussiness 4.0 KPN 
-courseName2, 2;courseName2, 2;courseName2, 2;
-courseName3, 3;courseName1, 1;courseName2, 2;
-feeName0, 0;feeName3, 3;feeName1, 1;
-feeName0, 0;feeName2, 2;feeName3, 3;
-
-200024 first last24 ComputerScience 3.0 KPN 
-courseName0, 0;courseName2, 2;courseName3, 3;
-courseName2, 2;courseName3, 3;courseName1, 1;
-feeName2, 2;feeName1, 1;feeName2, 2;
-feeName1, 1;feeName3, 3;feeName1, 1;
-
-200025 first last25 ComputerScience 1.0 KPN 
-courseName0, 0;courseName0, 0;courseName2, 2;
-courseName3, 3;courseName2, 2;courseName1, 1;
-feeName2, 2;feeName2, 2;feeName3, 3;
-feeName1, 1;feeName0, 0;feeName2, 2;
-
-200026 first last26 Biology 2.0 KPN 
-courseName3, 3;courseName2, 2;courseName0, 0;
-courseName3, 3;courseName2, 2;courseName1, 1;
-feeName0, 0;feeName2, 2;feeName1, 1;
-feeName0, 0;feeName0, 0;feeName0, 0;
-
-200027 first last27 Biology 2.0 KPN 
-courseName0, 0;courseName1, 1;courseName0, 0;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName2, 2;feeName1, 1;feeName0, 0;
-feeName2, 2;feeName3, 3;feeName1, 1;
-
-200028 first last28 ComputerScience 4.0 KPN 
-courseName0, 0;courseName2, 2;courseName1, 1;
-courseName3, 3;courseName3, 3;courseName3, 3;
-feeName3, 3;feeName2, 2;feeName3, 3;
-feeName2, 2;feeName2, 2;feeName2, 2;
-
-200029 first last29 Biology 3.0 KPN 
-courseName1, 1;courseName3, 3;courseName3, 3;
-courseName3, 3;courseName3, 3;courseName2, 2;
-feeName0, 0;feeName2, 2;feeName0, 0;
-feeName0, 0;feeName3, 3;feeName0, 0;
-
-200030 first last30 Bussiness 3.0 KPN 
-courseName3, 3;courseName1, 1;courseName2, 2;
-courseName1, 1;courseName1, 1;courseName0, 0;
-feeName3, 3;feeName2, 2;feeName1, 1;
-feeName3, 3;feeName0, 0;feeName1, 1;
-
-200031 first last31 Biology 2.0 KPN 
-courseName0, 0;courseName3, 3;courseName3, 3;
-courseName3, 3;courseName3, 3;courseName3, 3;
-feeName0, 0;feeName2, 2;feeName3, 3;
-feeName2, 2;feeName2, 2;feeName0, 0;
-
-200032 first last32 ComputerScience 4.0 KPN 
-courseName0, 0;courseName2, 2;courseName1, 1;
-courseName1, 1;courseName0, 0;courseName0, 0;
-feeName0, 0;feeName2, 2;feeName2, 2;
-feeName2, 2;feeName2, 2;feeName0, 0;
-
-200033 first last33 Bussiness 4.0 KPN 
-courseName2, 2;courseName2, 2;courseName0, 0;
-courseName3, 3;courseName1, 1;courseName1, 1;
-feeName0, 0;feeName3, 3;feeName0, 0;
-feeName0, 0;feeName0, 0;feeName1, 1;
-
-200034 first last34 Bussiness 1.0 KPN 
-courseName0, 0;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName1, 1;feeName1, 1;feeName2, 2;
-feeName0, 0;feeName2, 2;feeName3, 3;
-
-200035 first last35 ComputerScience 4.0 KPN 
-courseName3, 3;courseName0, 0;courseName3, 3;
-courseName3, 3;courseName1, 1;courseName2, 2;
-feeName3, 3;feeName3, 3;feeName1, 1;
-feeName3, 3;feeName2, 2;feeName3, 3;
-
-200036 first last36 Bussiness 4.0 KPN 
-courseName1, 1;courseName0, 0;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName2, 2;
-feeName1, 1;feeName0, 0;feeName2, 2;
-feeName1, 1;feeName2, 2;feeName1, 1;
-
-200037 first last37 Bussiness 1.0 KPN 
-courseName3, 3;courseName1, 1;courseName0, 0;
-courseName1, 1;courseName0, 0;courseName0, 0;
-feeName3, 3;feeName1, 1;feeName2, 2;
-feeName2, 2;feeName1, 1;feeName1, 1;
-
-200038 first last38 ComputerScience 4.0 KPN 
-courseName3, 3;courseName3, 3;courseName0, 0;
-courseName1, 1;courseName0, 0;courseName0, 0;
-feeName0, 0;feeName1, 1;feeName0, 0;
-feeName1, 1;feeName1, 1;feeName1, 1;
-
-200039 first last39 ComputerScience 3.0 KPN 
-courseName1, 1;courseName3, 3;courseName2, 2;
-courseName0, 0;courseName3, 3;courseName3, 3;
-feeName3, 3;feeName1, 1;feeName3, 3;
-feeName0, 0;feeName2, 2;feeName1, 1;
-
-200040 first last40 Bussiness 1.0 KPN 
-courseName0, 0;courseName2, 2;courseName3, 3;
-courseName0, 0;courseName0, 0;courseName2, 2;
-feeName3, 3;feeName3, 3;feeName1, 1;
-feeName2, 2;feeName1, 1;feeName0, 0;
-
-200041 first last41 Biology 0.0 KPN 
-courseName1, 1;courseName2, 2;courseName2, 2;
-courseName1, 1;courseName2, 2;courseName3, 3;
-feeName3, 3;feeName2, 2;feeName2, 2;
-feeName3, 3;feeName0, 0;feeName3, 3;
-
-200042 first last42 Biology 3.0 KPN 
-courseName1, 1;courseName2, 2;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName1, 1;
-feeName1, 1;feeName2, 2;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200043 first last43 ComputerScience 0.0 KPN 
-courseName1, 1;courseName1, 1;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName1, 1;
-feeName0, 0;feeName3, 3;feeName3, 3;
-feeName1, 1;feeName3, 3;feeName2, 2;
-
-200044 first last44 ComputerScience 4.0 KPN 
-courseName3, 3;courseName3, 3;courseName0, 0;
-courseName2, 2;courseName0, 0;courseName1, 1;
-feeName2, 2;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName0, 0;feeName1, 1;
-
-200045 first last45 ComputerScience 2.0 KPN 
-courseName3, 3;courseName1, 1;courseName3, 3;
-courseName3, 3;courseName0, 0;courseName1, 1;
-feeName3, 3;feeName0, 0;feeName1, 1;
-feeName3, 3;feeName3, 3;feeName1, 1;
-
-200046 first last46 Biology 2.0 KPN 
-courseName1, 1;courseName2, 2;courseName1, 1;
-courseName0, 0;courseName1, 1;courseName1, 1;
-feeName2, 2;feeName0, 0;feeName3, 3;
-feeName2, 2;feeName2, 2;feeName3, 3;
-
-200047 first last47 ComputerScience 0.0 KPN 
-courseName2, 2;courseName3, 3;courseName0, 0;
-courseName3, 3;courseName0, 0;courseName3, 3;
-feeName0, 0;feeName1, 1;feeName3, 3;
-feeName0, 0;feeName1, 1;feeName1, 1;
-
-200048 first last48 Biology 2.0 KPN 
-courseName0, 0;courseName1, 1;courseName2, 2;
-courseName1, 1;courseName0, 0;courseName2, 2;
-feeName0, 0;feeName0, 0;feeName0, 0;
-feeName3, 3;feeName3, 3;feeName3, 3;
-
-200049 first last49 Bussiness 2.0 KPN 
-courseName3, 3;courseName3, 3;courseName2, 2;
-courseName2, 2;courseName3, 3;courseName3, 3;
-feeName3, 3;feeName3, 3;feeName2, 2;
-feeName2, 2;feeName1, 1;feeName3, 3;
-
-200050 first last50 ComputerScience 3.0 KPN 
-courseName2, 2;courseName0, 0;courseName3, 3;
-courseName2, 2;courseName2, 2;courseName0, 0;
-feeName1, 1;feeName2, 2;feeName3, 3;
-feeName1, 1;feeName0, 0;feeName2, 2;
-
-200051 first last51 ComputerScience 3.0 KPN 
-courseName2, 2;courseName1, 1;courseName2, 2;
-courseName2, 2;courseName0, 0;courseName1, 1;
-feeName2, 2;feeName1, 1;feeName1, 1;
-feeName1, 1;feeName0, 0;feeName2, 2;
-
-200052 first last52 Biology 0.0 KPN 
-courseName0, 0;courseName3, 3;courseName2, 2;
-courseName0, 0;courseName0, 0;courseName2, 2;
-feeName2, 2;feeName2, 2;feeName1, 1;
-feeName3, 3;feeName2, 2;feeName0, 0;
-
-200053 first last53 Biology 3.0 KPN 
-courseName0, 0;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName0, 0;courseName3, 3;
-feeName2, 2;feeName2, 2;feeName2, 2;
-feeName1, 1;feeName1, 1;feeName3, 3;
-
-200054 first last54 Bussiness 2.0 KPN 
-courseName0, 0;courseName0, 0;courseName3, 3;
-courseName2, 2;courseName0, 0;courseName0, 0;
-feeName1, 1;feeName0, 0;feeName3, 3;
-feeName1, 1;feeName3, 3;feeName1, 1;
-
-200055 first last55 Bussiness 0.0 KPN 
-courseName3, 3;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName3, 3;courseName1, 1;
-feeName0, 0;feeName1, 1;feeName0, 0;
-feeName2, 2;feeName0, 0;feeName2, 2;
-
-200056 first last56 Biology 2.0 KPN 
-courseName1, 1;courseName3, 3;courseName3, 3;
-courseName0, 0;courseName2, 2;courseName0, 0;
-feeName0, 0;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName3, 3;
-
-200057 first last57 ComputerScience 0.0 KPN 
-courseName3, 3;courseName0, 0;courseName2, 2;
-courseName0, 0;courseName0, 0;courseName2, 2;
-feeName2, 2;feeName3, 3;feeName2, 2;
-feeName3, 3;feeName0, 0;feeName0, 0;
-
-200058 first last58 Bussiness 3.0 KPN 
-courseName3, 3;courseName0, 0;courseName2, 2;
-courseName3, 3;courseName2, 2;courseName2, 2;
-feeName0, 0;feeName3, 3;feeName1, 1;
-feeName0, 0;feeName0, 0;feeName2, 2;
-
-200059 first last59 Bussiness 4.0 KPN 
-courseName1, 1;courseName1, 1;courseName2, 2;
-courseName3, 3;courseName1, 1;courseName3, 3;
-feeName2, 2;feeName3, 3;feeName2, 2;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200060 first last60 Biology 0.0 KPN 
-courseName0, 0;courseName3, 3;courseName2, 2;
-courseName1, 1;courseName1, 1;courseName1, 1;
-feeName3, 3;feeName2, 2;feeName3, 3;
-feeName2, 2;feeName1, 1;feeName0, 0;
-
-200061 first last61 Bussiness 4.0 KPN 
-courseName0, 0;courseName0, 0;courseName1, 1;
-courseName3, 3;courseName2, 2;courseName2, 2;
-feeName1, 1;feeName3, 3;feeName0, 0;
-feeName3, 3;feeName0, 0;feeName2, 2;
-
-200062 first last62 ComputerScience 2.0 KPN 
-courseName1, 1;courseName1, 1;courseName1, 1;
-courseName0, 0;courseName0, 0;courseName2, 2;
-feeName2, 2;feeName3, 3;feeName1, 1;
-feeName0, 0;feeName1, 1;feeName0, 0;
-
-200063 first last63 Bussiness 2.0 KPN 
-courseName1, 1;courseName0, 0;courseName0, 0;
-courseName1, 1;courseName2, 2;courseName0, 0;
-feeName1, 1;feeName0, 0;feeName2, 2;
-feeName0, 0;feeName3, 3;feeName2, 2;
-
-200064 first last64 Biology 0.0 KPN 
-courseName0, 0;courseName0, 0;courseName1, 1;
-courseName3, 3;courseName2, 2;courseName3, 3;
-feeName2, 2;feeName2, 2;feeName0, 0;
-feeName2, 2;feeName1, 1;feeName0, 0;
-
-200065 first last65 ComputerScience 3.0 KPN 
-courseName1, 1;courseName1, 1;courseName1, 1;
-courseName2, 2;courseName2, 2;courseName3, 3;
-feeName0, 0;feeName2, 2;feeName3, 3;
-feeName0, 0;feeName2, 2;feeName3, 3;
-
-200066 first last66 ComputerScience 1.0 KPN 
-courseName0, 0;courseName1, 1;courseName3, 3;
-courseName3, 3;courseName2, 2;courseName2, 2;
-feeName3, 3;feeName2, 2;feeName2, 2;
-feeName2, 2;feeName1, 1;feeName3, 3;
-
-200067 first last67 Bussiness 0.0 KPN 
-courseName1, 1;courseName3, 3;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName1, 1;
-feeName2, 2;feeName0, 0;feeName2, 2;
-feeName0, 0;feeName0, 0;feeName0, 0;
-
-200068 first last68 Bussiness 0.0 KPN 
-courseName2, 2;courseName2, 2;courseName0, 0;
-courseName0, 0;courseName3, 3;courseName0, 0;
-feeName1, 1;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200069 first last69 Biology 0.0 KPN 
-courseName1, 1;courseName0, 0;courseName2, 2;
-courseName1, 1;courseName0, 0;courseName0, 0;
-feeName1, 1;feeName0, 0;feeName2, 2;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200070 first last70 Bussiness 2.0 KPN 
-courseName3, 3;courseName1, 1;courseName2, 2;
-courseName0, 0;courseName2, 2;courseName0, 0;
-feeName3, 3;feeName3, 3;feeName2, 2;
-feeName2, 2;feeName3, 3;feeName3, 3;
-
-200071 first last71 Biology 0.0 KPN 
-courseName1, 1;courseName0, 0;courseName2, 2;
-courseName2, 2;courseName0, 0;courseName3, 3;
-feeName0, 0;feeName2, 2;feeName2, 2;
-feeName3, 3;feeName1, 1;feeName0, 0;
-
-200072 first last72 ComputerScience 0.0 KPN 
-courseName0, 0;courseName1, 1;courseName0, 0;
-courseName1, 1;courseName1, 1;courseName3, 3;
-feeName2, 2;feeName0, 0;feeName0, 0;
-feeName0, 0;feeName3, 3;feeName2, 2;
-
-200073 first last73 Biology 0.0 KPN 
-courseName1, 1;courseName1, 1;courseName2, 2;
-courseName2, 2;courseName0, 0;courseName0, 0;
-feeName2, 2;feeName3, 3;feeName0, 0;
-feeName2, 2;feeName0, 0;feeName2, 2;
-
-200074 first last74 ComputerScience 1.0 KPN 
-courseName0, 0;courseName1, 1;courseName0, 0;
-courseName2, 2;courseName3, 3;courseName0, 0;
-feeName1, 1;feeName2, 2;feeName2, 2;
-feeName3, 3;feeName0, 0;feeName1, 1;
-
-200075 first last75 Biology 2.0 KPN 
-courseName1, 1;courseName1, 1;courseName3, 3;
-courseName0, 0;courseName2, 2;courseName0, 0;
-feeName1, 1;feeName0, 0;feeName2, 2;
-feeName3, 3;feeName0, 0;feeName1, 1;
-
-200076 first last76 ComputerScience 2.0 KPN 
-courseName2, 2;courseName2, 2;courseName2, 2;
-courseName1, 1;courseName0, 0;courseName0, 0;
-feeName2, 2;feeName1, 1;feeName0, 0;
-feeName1, 1;feeName3, 3;feeName1, 1;
-
-200077 first last77 Bussiness 3.0 KPN 
-courseName0, 0;courseName3, 3;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName2, 2;
-feeName3, 3;feeName3, 3;feeName2, 2;
-feeName1, 1;feeName3, 3;feeName0, 0;
-
-200078 first last78 Bussiness 4.0 KPN 
-courseName0, 0;courseName3, 3;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName0, 0;
-feeName2, 2;feeName3, 3;feeName2, 2;
-feeName0, 0;feeName1, 1;feeName0, 0;
-
-200079 first last79 Biology 4.0 KPN 
-courseName3, 3;courseName1, 1;courseName3, 3;
-courseName1, 1;courseName1, 1;courseName2, 2;
-feeName1, 1;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName1, 1;
-
-200080 first last80 Biology 3.0 KPN 
-courseName1, 1;courseName1, 1;courseName0, 0;
-courseName3, 3;courseName2, 2;courseName3, 3;
-feeName1, 1;feeName2, 2;feeName0, 0;
-feeName0, 0;feeName2, 2;feeName0, 0;
-
-200081 first last81 ComputerScience 1.0 KPN 
-courseName1, 1;courseName1, 1;courseName1, 1;
-courseName1, 1;courseName1, 1;courseName1, 1;
-feeName3, 3;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName2, 2;
-
-200082 first last82 Bussiness 4.0 KPN 
-courseName3, 3;courseName1, 1;courseName2, 2;
-courseName0, 0;courseName1, 1;courseName0, 0;
-feeName0, 0;feeName0, 0;feeName0, 0;
-feeName1, 1;feeName2, 2;feeName2, 2;
-
-200083 first last83 ComputerScience 0.0 KPN 
-courseName2, 2;courseName1, 1;courseName0, 0;
-courseName2, 2;courseName3, 3;courseName2, 2;
-feeName2, 2;feeName2, 2;feeName3, 3;
-feeName0, 0;feeName1, 1;feeName0, 0;
-
-200084 first last84 ComputerScience 4.0 KPN 
-courseName3, 3;courseName0, 0;courseName0, 0;
-courseName0, 0;courseName0, 0;courseName0, 0;
-feeName2, 2;feeName2, 2;feeName3, 3;
-feeName1, 1;feeName2, 2;feeName3, 3;
-
-200085 first last85 Bussiness 2.0 KPN 
-courseName2, 2;courseName0, 0;courseName3, 3;
-courseName3, 3;courseName2, 2;courseName1, 1;
-feeName0, 0;feeName1, 1;feeName3, 3;
-feeName3, 3;feeName1, 1;feeName3, 3;
-
-200086 first last86 ComputerScience 4.0 KPN 
-courseName0, 0;courseName2, 2;courseName0, 0;
-courseName0, 0;courseName2, 2;courseName0, 0;
-feeName1, 1;feeName2, 2;feeName0, 0;
-feeName0, 0;feeName3, 3;feeName2, 2;
-
-200087 first last87 Biology 1.0 KPN 
-courseName3, 3;courseName0, 0;courseName3, 3;
-courseName3, 3;courseName2, 2;courseName1, 1;
-feeName2, 2;feeName3, 3;feeName1, 1;
-feeName0, 0;feeName3, 3;feeName1, 1;
-
-200088 first last88 Bussiness 4.0 KPN 
-courseName0, 0;courseName3, 3;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName3, 3;
-feeName0, 0;feeName3, 3;feeName0, 0;
-feeName0, 0;feeName0, 0;feeName1, 1;
-
-200089 first last89 ComputerScience 0.0 KPN 
-courseName0, 0;courseName1, 1;courseName2, 2;
-courseName2, 2;courseName1, 1;courseName0, 0;
-feeName0, 0;feeName0, 0;feeName3, 3;
-feeName3, 3;feeName2, 2;feeName0, 0;
-
-200090 first last90 Bussiness 4.0 KPN 
-courseName3, 3;courseName1, 1;courseName1, 1;
-courseName2, 2;courseName2, 2;courseName2, 2;
-feeName2, 2;feeName1, 1;feeName1, 1;
-feeName3, 3;feeName0, 0;feeName3, 3;
-
-200091 first last91 Biology 4.0 KPN 
-courseName1, 1;courseName3, 3;courseName2, 2;
-courseName2, 2;courseName2, 2;courseName1, 1;
-feeName1, 1;feeName1, 1;feeName0, 0;
-feeName1, 1;feeName3, 3;feeName1, 1;
-
-200092 first last92 Biology 4.0 KPN 
-courseName3, 3;courseName2, 2;courseName2, 2;
-courseName3, 3;courseName2, 2;courseName1, 1;
-feeName2, 2;feeName1, 1;feeName3, 3;
-feeName0, 0;feeName0, 0;feeName3, 3;
-
-200093 first last93 Biology 0.0 KPN 
-courseName3, 3;courseName3, 3;courseName3, 3;
-courseName0, 0;courseName1, 1;courseName1, 1;
-feeName2, 2;feeName1, 1;feeName1, 1;
-feeName0, 0;feeName2, 2;feeName0, 0;
-
-200094 first last94 Bussiness 3.0 KPN 
-courseName1, 1;courseName1, 1;courseName3, 3;
-courseName1, 1;courseName3, 3;courseName1, 1;
-feeName1, 1;feeName2, 2;feeName2, 2;
-feeName3, 3;feeName3, 3;feeName2, 2;
-
-200095 first last95 ComputerScience 2.0 KPN 
-courseName0, 0;courseName2, 2;courseName3, 3;
-courseName0, 0;courseName0, 0;courseName0, 0;
-feeName1, 1;feeName0, 0;feeName3, 3;
-feeName1, 1;feeName3, 3;feeName1, 1;
-
-200096 first last96 Biology 4.0 KPN 
-courseName3, 3;courseName1, 1;courseName0, 0;
-courseName2, 2;courseName3, 3;courseName3, 3;
-feeName0, 0;feeName2, 2;feeName1, 1;
-feeName0, 0;feeName0, 0;feeName0, 0;
-
-200097 first last97 ComputerScience 2.0 KPN 
-courseName2, 2;courseName3, 3;courseName3, 3;
-courseName2, 2;courseName1, 1;courseName0, 0;
-feeName0, 0;feeName1, 1;feeName1, 1;
-feeName2, 2;feeName3, 3;feeName1, 1;
-
-200098 first last98 ComputerScience 2.0 KPN 
-courseName0, 0;courseName3, 3;courseName0, 0;
-courseName1, 1;courseName3, 3;courseName2, 2;
-feeName0, 0;feeName1, 1;feeName0, 0;
-feeName2, 2;feeName0, 0;feeName2, 2;
-
-200099 first last99 Biology 2.0 KPN 
-courseName0, 0;courseName3, 3;courseName0, 0;
-courseName3, 3;courseName3, 3;courseName2, 2;
-feeName0, 0;feeName2, 2;feeName3, 3;
-feeName1, 1;feeName1, 1;feeName3, 3;
+200000:first last0:ComputerScience:2.0:KPN
+courseName1,1:courseName3,3:courseName1,1:
+courseName2,2:courseName3,3:courseName3,3:
+feeName3,3:feeName2,2:feeName0,0:
+feeName1,1:feeName3,3:feeName1,1:
+
+200001:first last1:Bussiness:3.0:KPN
+courseName1,1:courseName1,1:courseName3,3:
+courseName3,3:courseName2,2:courseName2,2:
+feeName0,0:feeName1,1:feeName1,1:
+feeName1,1:feeName1,1:feeName0,0:
+
+200002:first last2:Biology:0.0:KPN
+courseName1,1:courseName0,0:courseName3,3:
+courseName3,3:courseName1,1:courseName1,1:
+feeName1,1:feeName0,0:feeName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+
+200003:first last3:ComputerScience:2.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName2,2:courseName2,2:courseName2,2:
+feeName1,1:feeName1,1:feeName2,2:
+feeName2,2:feeName2,2:feeName3,3:
+
+200004:first last4:Biology:0.0:KPN
+courseName0,0:courseName3,3:courseName0,0:
+courseName0,0:courseName3,3:courseName1,1:
+feeName2,2:feeName1,1:feeName0,0:
+feeName0,0:feeName0,0:feeName2,2:
+
+200005:first last5:ComputerScience:4.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName3,3:courseName0,0:courseName3,3:
+feeName0,0:feeName1,1:feeName0,0:
+feeName3,3:feeName1,1:feeName1,1:
+
+200006:first last6:Biology:2.0:KPN
+courseName3,3:courseName2,2:courseName0,0:
+courseName0,0:courseName1,1:courseName3,3:
+feeName3,3:feeName3,3:feeName1,1:
+feeName1,1:feeName2,2:feeName2,2:
+
+200007:first last7:Bussiness:2.0:KPN
+courseName2,2:courseName2,2:courseName0,0:
+courseName1,1:courseName0,0:courseName1,1:
+feeName1,1:feeName2,2:feeName2,2:
+feeName1,1:feeName0,0:feeName0,0:
+
+200008:first last8:Biology:3.0:KPN
+courseName0,0:courseName3,3:courseName2,2:
+courseName0,0:courseName2,2:courseName0,0:
+feeName3,3:feeName0,0:feeName1,1:
+feeName1,1:feeName2,2:feeName0,0:
+
+200009:first last9:Biology:4.0:KPN
+courseName2,2:courseName0,0:courseName3,3:
+courseName1,1:courseName0,0:courseName2,2:
+feeName3,3:feeName3,3:feeName2,2:
+feeName2,2:feeName3,3:feeName3,3:
+
+200010:first last10:ComputerScience:0.0:KPN
+courseName3,3:courseName3,3:courseName1,1:
+courseName3,3:courseName0,0:courseName0,0:
+feeName3,3:feeName3,3:feeName3,3:
+feeName0,0:feeName2,2:feeName0,0:
+
+200011:first last11:ComputerScience:4.0:KPN
+courseName3,3:courseName1,1:courseName2,2:
+courseName1,1:courseName3,3:courseName1,1:
+feeName2,2:feeName2,2:feeName0,0:
+feeName2,2:feeName2,2:feeName1,1:
+
+200012:first last12:Biology:1.0:KPN
+courseName2,2:courseName2,2:courseName0,0:
+courseName3,3:courseName2,2:courseName3,3:
+feeName3,3:feeName2,2:feeName0,0:
+feeName3,3:feeName2,2:feeName0,0:
+
+200013:first last13:Bussiness:0.0:KPN
+courseName1,1:courseName1,1:courseName3,3:
+courseName0,0:courseName0,0:courseName0,0:
+feeName1,1:feeName1,1:feeName2,2:
+feeName2,2:feeName2,2:feeName1,1:
+
+200014:first last14:ComputerScience:2.0:KPN
+courseName3,3:courseName2,2:courseName3,3:
+courseName2,2:courseName1,1:courseName2,2:
+feeName0,0:feeName1,1:feeName1,1:
+feeName2,2:feeName3,3:feeName2,2:
+
+200015:first last15:Bussiness:0.0:KPN
+courseName0,0:courseName3,3:courseName0,0:
+courseName3,3:courseName2,2:courseName2,2:
+feeName3,3:feeName2,2:feeName0,0:
+feeName0,0:feeName2,2:feeName1,1:
+
+200016:first last16:ComputerScience:0.0:KPN
+courseName1,1:courseName2,2:courseName0,0:
+courseName2,2:courseName3,3:courseName1,1:
+feeName0,0:feeName2,2:feeName3,3:
+feeName3,3:feeName0,0:feeName2,2:
+
+200017:first last17:ComputerScience:1.0:KPN
+courseName0,0:courseName2,2:courseName3,3:
+courseName0,0:courseName3,3:courseName3,3:
+feeName1,1:feeName3,3:feeName3,3:
+feeName2,2:feeName3,3:feeName1,1:
+
+200018:first last18:Biology:0.0:KPN
+courseName2,2:courseName0,0:courseName2,2:
+courseName0,0:courseName0,0:courseName0,0:
+feeName3,3:feeName1,1:feeName0,0:
+feeName1,1:feeName3,3:feeName2,2:
+
+200019:first last19:Bussiness:3.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName2,2:courseName3,3:courseName2,2:
+feeName1,1:feeName1,1:feeName1,1:
+feeName2,2:feeName3,3:feeName0,0:
+
+200020:first last20:Bussiness:0.0:KPN
+courseName1,1:courseName1,1:courseName0,0:
+courseName3,3:courseName3,3:courseName3,3:
+feeName0,0:feeName3,3:feeName0,0:
+feeName0,0:feeName0,0:feeName3,3:
+
+200021:first last21:ComputerScience:2.0:KPN
+courseName2,2:courseName1,1:courseName1,1:
+courseName3,3:courseName2,2:courseName3,3:
+feeName3,3:feeName2,2:feeName0,0:
+feeName1,1:feeName3,3:feeName1,1:
+
+200022:first last22:Bussiness:4.0:KPN
+courseName2,2:courseName3,3:courseName2,2:
+courseName1,1:courseName3,3:courseName1,1:
+feeName1,1:feeName0,0:feeName0,0:
+feeName0,0:feeName2,2:feeName2,2:
+
+200023:first last23:ComputerScience:3.0:KPN
+courseName1,1:courseName0,0:courseName2,2:
+courseName0,0:courseName2,2:courseName2,2:
+feeName3,3:feeName1,1:feeName3,3:
+feeName3,3:feeName0,0:feeName1,1:
+
+200024:first last24:ComputerScience:4.0:KPN
+courseName2,2:courseName2,2:courseName3,3:
+courseName1,1:courseName1,1:courseName2,2:
+feeName0,0:feeName1,1:feeName1,1:
+feeName0,0:feeName0,0:feeName0,0:
+
+200025:first last25:Bussiness:3.0:KPN
+courseName1,1:courseName1,1:courseName0,0:
+courseName2,2:courseName3,3:courseName1,1:
+feeName0,0:feeName2,2:feeName3,3:
+feeName0,0:feeName2,2:feeName0,0:
+
+200026:first last26:ComputerScience:0.0:KPN
+courseName2,2:courseName2,2:courseName2,2:
+courseName0,0:courseName3,3:courseName2,2:
+feeName2,2:feeName1,1:feeName2,2:
+feeName2,2:feeName3,3:feeName3,3:
+
+200027:first last27:Bussiness:3.0:KPN
+courseName2,2:courseName1,1:courseName1,1:
+courseName2,2:courseName2,2:courseName3,3:
+feeName3,3:feeName0,0:feeName2,2:
+feeName1,1:feeName3,3:feeName2,2:
+
+200028:first last28:Bussiness:1.0:KPN
+courseName3,3:courseName3,3:courseName3,3:
+courseName2,2:courseName0,0:courseName1,1:
+feeName3,3:feeName2,2:feeName0,0:
+feeName1,1:feeName0,0:feeName3,3:
+
+200029:first last29:ComputerScience:0.0:KPN
+courseName3,3:courseName2,2:courseName3,3:
+courseName2,2:courseName2,2:courseName3,3:
+feeName1,1:feeName3,3:feeName0,0:
+feeName1,1:feeName2,2:feeName2,2:
+
+200030:first last30:Bussiness:1.0:KPN
+courseName2,2:courseName1,1:courseName1,1:
+courseName3,3:courseName2,2:courseName0,0:
+feeName0,0:feeName2,2:feeName3,3:
+feeName0,0:feeName3,3:feeName0,0:
+
+200031:first last31:Biology:2.0:KPN
+courseName3,3:courseName2,2:courseName3,3:
+courseName2,2:courseName0,0:courseName3,3:
+feeName3,3:feeName3,3:feeName1,1:
+feeName3,3:feeName3,3:feeName0,0:
+
+200032:first last32:ComputerScience:2.0:KPN
+courseName2,2:courseName1,1:courseName0,0:
+courseName0,0:courseName1,1:courseName2,2:
+feeName1,1:feeName2,2:feeName3,3:
+feeName2,2:feeName0,0:feeName2,2:
+
+200033:first last33:Bussiness:1.0:KPN
+courseName0,0:courseName1,1:courseName2,2:
+courseName0,0:courseName1,1:courseName3,3:
+feeName3,3:feeName0,0:feeName1,1:
+feeName1,1:feeName2,2:feeName0,0:
+
+200034:first last34:Bussiness:3.0:KPN
+courseName0,0:courseName1,1:courseName3,3:
+courseName3,3:courseName2,2:courseName1,1:
+feeName0,0:feeName2,2:feeName2,2:
+feeName0,0:feeName2,2:feeName0,0:
+
+200035:first last35:ComputerScience:2.0:KPN
+courseName3,3:courseName0,0:courseName3,3:
+courseName0,0:courseName1,1:courseName1,1:
+feeName3,3:feeName1,1:feeName2,2:
+feeName2,2:feeName0,0:feeName2,2:
+
+200036:first last36:ComputerScience:3.0:KPN
+courseName0,0:courseName0,0:courseName2,2:
+courseName0,0:courseName1,1:courseName3,3:
+feeName0,0:feeName0,0:feeName2,2:
+feeName1,1:feeName1,1:feeName1,1:
+
+200037:first last37:Biology:3.0:KPN
+courseName0,0:courseName3,3:courseName3,3:
+courseName1,1:courseName3,3:courseName2,2:
+feeName3,3:feeName3,3:feeName3,3:
+feeName0,0:feeName1,1:feeName2,2:
+
+200038:first last38:Biology:4.0:KPN
+courseName0,0:courseName1,1:courseName2,2:
+courseName1,1:courseName2,2:courseName1,1:
+feeName0,0:feeName2,2:feeName3,3:
+feeName1,1:feeName1,1:feeName3,3:
+
+200039:first last39:Biology:1.0:KPN
+courseName2,2:courseName0,0:courseName3,3:
+courseName0,0:courseName0,0:courseName0,0:
+feeName2,2:feeName2,2:feeName3,3:
+feeName2,2:feeName3,3:feeName0,0:
+
+200040:first last40:Biology:0.0:KPN
+courseName3,3:courseName2,2:courseName1,1:
+courseName1,1:courseName0,0:courseName3,3:
+feeName0,0:feeName0,0:feeName1,1:
+feeName0,0:feeName2,2:feeName0,0:
+
+200041:first last41:ComputerScience:4.0:KPN
+courseName1,1:courseName1,1:courseName2,2:
+courseName0,0:courseName2,2:courseName0,0:
+feeName3,3:feeName1,1:feeName1,1:
+feeName3,3:feeName1,1:feeName1,1:
+
+200042:first last42:Biology:4.0:KPN
+courseName1,1:courseName2,2:courseName3,3:
+courseName3,3:courseName3,3:courseName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+feeName1,1:feeName1,1:feeName0,0:
+
+200043:first last43:ComputerScience:0.0:KPN
+courseName0,0:courseName3,3:courseName1,1:
+courseName3,3:courseName2,2:courseName1,1:
+feeName0,0:feeName0,0:feeName3,3:
+feeName0,0:feeName2,2:feeName2,2:
+
+200044:first last44:Biology:3.0:KPN
+courseName0,0:courseName0,0:courseName1,1:
+courseName2,2:courseName2,2:courseName0,0:
+feeName2,2:feeName0,0:feeName3,3:
+feeName2,2:feeName1,1:feeName2,2:
+
+200045:first last45:Bussiness:1.0:KPN
+courseName2,2:courseName2,2:courseName3,3:
+courseName1,1:courseName3,3:courseName2,2:
+feeName3,3:feeName3,3:feeName0,0:
+feeName2,2:feeName3,3:feeName3,3:
+
+200046:first last46:Bussiness:3.0:KPN
+courseName3,3:courseName0,0:courseName2,2:
+courseName3,3:courseName0,0:courseName0,0:
+feeName0,0:feeName2,2:feeName3,3:
+feeName1,1:feeName0,0:feeName0,0:
+
+200047:first last47:ComputerScience:4.0:KPN
+courseName3,3:courseName0,0:courseName2,2:
+courseName1,1:courseName3,3:courseName0,0:
+feeName2,2:feeName2,2:feeName3,3:
+feeName2,2:feeName0,0:feeName3,3:
+
+200048:first last48:ComputerScience:3.0:KPN
+courseName1,1:courseName0,0:courseName0,0:
+courseName1,1:courseName0,0:courseName1,1:
+feeName0,0:feeName0,0:feeName3,3:
+feeName0,0:feeName0,0:feeName3,3:
+
+200049:first last49:Biology:4.0:KPN
+courseName0,0:courseName2,2:courseName2,2:
+courseName1,1:courseName1,1:courseName2,2:
+feeName3,3:feeName2,2:feeName2,2:
+feeName0,0:feeName0,0:feeName3,3:
+
+200050:first last50:Bussiness:2.0:KPN
+courseName0,0:courseName0,0:courseName2,2:
+courseName1,1:courseName3,3:courseName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+feeName1,1:feeName2,2:feeName1,1:
+
+200051:first last51:Bussiness:2.0:KPN
+courseName3,3:courseName3,3:courseName3,3:
+courseName0,0:courseName3,3:courseName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+feeName2,2:feeName1,1:feeName2,2:
+
+200052:first last52:ComputerScience:4.0:KPN
+courseName0,0:courseName2,2:courseName2,2:
+courseName0,0:courseName0,0:courseName1,1:
+feeName3,3:feeName1,1:feeName1,1:
+feeName3,3:feeName2,2:feeName0,0:
+
+200053:first last53:Bussiness:2.0:KPN
+courseName2,2:courseName1,1:courseName3,3:
+courseName2,2:courseName0,0:courseName3,3:
+feeName3,3:feeName3,3:feeName0,0:
+feeName2,2:feeName1,1:feeName2,2:
+
+200054:first last54:ComputerScience:3.0:KPN
+courseName0,0:courseName1,1:courseName1,1:
+courseName3,3:courseName1,1:courseName1,1:
+feeName0,0:feeName3,3:feeName2,2:
+feeName2,2:feeName1,1:feeName2,2:
+
+200055:first last55:ComputerScience:3.0:KPN
+courseName1,1:courseName3,3:courseName2,2:
+courseName1,1:courseName1,1:courseName3,3:
+feeName1,1:feeName2,2:feeName2,2:
+feeName2,2:feeName0,0:feeName3,3:
+
+200056:first last56:ComputerScience:4.0:KPN
+courseName0,0:courseName2,2:courseName3,3:
+courseName1,1:courseName0,0:courseName0,0:
+feeName1,1:feeName0,0:feeName2,2:
+feeName1,1:feeName3,3:feeName0,0:
+
+200057:first last57:Bussiness:0.0:KPN
+courseName2,2:courseName0,0:courseName1,1:
+courseName0,0:courseName1,1:courseName1,1:
+feeName3,3:feeName1,1:feeName0,0:
+feeName0,0:feeName3,3:feeName3,3:
+
+200058:first last58:ComputerScience:1.0:KPN
+courseName0,0:courseName2,2:courseName1,1:
+courseName1,1:courseName2,2:courseName0,0:
+feeName3,3:feeName3,3:feeName2,2:
+feeName3,3:feeName1,1:feeName1,1:
+
+200059:first last59:Biology:2.0:KPN
+courseName1,1:courseName3,3:courseName1,1:
+courseName0,0:courseName1,1:courseName1,1:
+feeName1,1:feeName1,1:feeName0,0:
+feeName3,3:feeName3,3:feeName0,0:
+
+200060:first last60:Bussiness:3.0:KPN
+courseName3,3:courseName3,3:courseName3,3:
+courseName0,0:courseName3,3:courseName3,3:
+feeName0,0:feeName3,3:feeName3,3:
+feeName3,3:feeName3,3:feeName3,3:
+
+200061:first last61:Biology:4.0:KPN
+courseName3,3:courseName0,0:courseName2,2:
+courseName0,0:courseName0,0:courseName2,2:
+feeName0,0:feeName2,2:feeName1,1:
+feeName1,1:feeName0,0:feeName1,1:
+
+200062:first last62:ComputerScience:1.0:KPN
+courseName0,0:courseName1,1:courseName2,2:
+courseName3,3:courseName0,0:courseName2,2:
+feeName3,3:feeName3,3:feeName2,2:
+feeName0,0:feeName2,2:feeName3,3:
+
+200063:first last63:Bussiness:2.0:KPN
+courseName3,3:courseName1,1:courseName1,1:
+courseName2,2:courseName3,3:courseName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+feeName1,1:feeName1,1:feeName2,2:
+
+200064:first last64:Biology:4.0:KPN
+courseName1,1:courseName1,1:courseName3,3:
+courseName3,3:courseName2,2:courseName2,2:
+feeName3,3:feeName2,2:feeName2,2:
+feeName0,0:feeName0,0:feeName1,1:
+
+200065:first last65:ComputerScience:4.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName2,2:courseName0,0:courseName0,0:
+feeName2,2:feeName2,2:feeName2,2:
+feeName1,1:feeName2,2:feeName1,1:
+
+200066:first last66:ComputerScience:3.0:KPN
+courseName0,0:courseName3,3:courseName1,1:
+courseName1,1:courseName0,0:courseName0,0:
+feeName2,2:feeName1,1:feeName1,1:
+feeName3,3:feeName2,2:feeName2,2:
+
+200067:first last67:ComputerScience:2.0:KPN
+courseName0,0:courseName0,0:courseName0,0:
+courseName0,0:courseName3,3:courseName2,2:
+feeName2,2:feeName3,3:feeName2,2:
+feeName2,2:feeName1,1:feeName1,1:
+
+200068:first last68:Bussiness:2.0:KPN
+courseName1,1:courseName0,0:courseName2,2:
+courseName3,3:courseName2,2:courseName1,1:
+feeName0,0:feeName3,3:feeName2,2:
+feeName0,0:feeName1,1:feeName1,1:
+
+200069:first last69:ComputerScience:0.0:KPN
+courseName0,0:courseName3,3:courseName2,2:
+courseName1,1:courseName2,2:courseName1,1:
+feeName3,3:feeName0,0:feeName0,0:
+feeName3,3:feeName3,3:feeName2,2:
+
+200070:first last70:Bussiness:0.0:KPN
+courseName0,0:courseName1,1:courseName1,1:
+courseName0,0:courseName1,1:courseName2,2:
+feeName0,0:feeName3,3:feeName1,1:
+feeName1,1:feeName1,1:feeName3,3:
+
+200071:first last71:ComputerScience:2.0:KPN
+courseName1,1:courseName1,1:courseName0,0:
+courseName3,3:courseName1,1:courseName2,2:
+feeName3,3:feeName3,3:feeName3,3:
+feeName3,3:feeName0,0:feeName1,1:
+
+200072:first last72:Biology:0.0:KPN
+courseName1,1:courseName3,3:courseName0,0:
+courseName2,2:courseName2,2:courseName1,1:
+feeName3,3:feeName2,2:feeName1,1:
+feeName2,2:feeName0,0:feeName3,3:
+
+200073:first last73:ComputerScience:4.0:KPN
+courseName2,2:courseName2,2:courseName0,0:
+courseName0,0:courseName3,3:courseName1,1:
+feeName0,0:feeName0,0:feeName0,0:
+feeName3,3:feeName2,2:feeName2,2:
+
+200074:first last74:Bussiness:1.0:KPN
+courseName3,3:courseName2,2:courseName3,3:
+courseName1,1:courseName3,3:courseName1,1:
+feeName0,0:feeName2,2:feeName2,2:
+feeName1,1:feeName1,1:feeName3,3:
+
+200075:first last75:ComputerScience:4.0:KPN
+courseName2,2:courseName1,1:courseName2,2:
+courseName1,1:courseName3,3:courseName3,3:
+feeName0,0:feeName2,2:feeName0,0:
+feeName0,0:feeName1,1:feeName0,0:
+
+200076:first last76:Biology:1.0:KPN
+courseName0,0:courseName2,2:courseName1,1:
+courseName2,2:courseName0,0:courseName2,2:
+feeName2,2:feeName0,0:feeName1,1:
+feeName0,0:feeName2,2:feeName0,0:
+
+200077:first last77:Biology:2.0:KPN
+courseName0,0:courseName0,0:courseName1,1:
+courseName3,3:courseName3,3:courseName1,1:
+feeName2,2:feeName2,2:feeName1,1:
+feeName3,3:feeName3,3:feeName1,1:
+
+200078:first last78:ComputerScience:4.0:KPN
+courseName0,0:courseName1,1:courseName0,0:
+courseName0,0:courseName0,0:courseName2,2:
+feeName0,0:feeName3,3:feeName3,3:
+feeName2,2:feeName0,0:feeName0,0:
+
+200079:first last79:ComputerScience:1.0:KPN
+courseName3,3:courseName3,3:courseName0,0:
+courseName1,1:courseName3,3:courseName2,2:
+feeName1,1:feeName1,1:feeName3,3:
+feeName1,1:feeName2,2:feeName0,0:
+
+200080:first last80:Biology:0.0:KPN
+courseName2,2:courseName1,1:courseName1,1:
+courseName2,2:courseName2,2:courseName0,0:
+feeName3,3:feeName2,2:feeName0,0:
+feeName1,1:feeName3,3:feeName0,0:
+
+200081:first last81:Bussiness:2.0:KPN
+courseName1,1:courseName1,1:courseName2,2:
+courseName1,1:courseName1,1:courseName0,0:
+feeName3,3:feeName3,3:feeName0,0:
+feeName0,0:feeName1,1:feeName1,1:
+
+200082:first last82:Bussiness:2.0:KPN
+courseName3,3:courseName0,0:courseName2,2:
+courseName3,3:courseName3,3:courseName1,1:
+feeName3,3:feeName1,1:feeName1,1:
+feeName1,1:feeName2,2:feeName2,2:
+
+200083:first last83:Biology:0.0:KPN
+courseName1,1:courseName1,1:courseName1,1:
+courseName2,2:courseName1,1:courseName1,1:
+feeName3,3:feeName0,0:feeName1,1:
+feeName1,1:feeName3,3:feeName1,1:
+
+200084:first last84:Bussiness:4.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName2,2:courseName0,0:courseName0,0:
+feeName0,0:feeName0,0:feeName3,3:
+feeName3,3:feeName3,3:feeName0,0:
+
+200085:first last85:Bussiness:2.0:KPN
+courseName0,0:courseName3,3:courseName1,1:
+courseName2,2:courseName3,3:courseName2,2:
+feeName2,2:feeName2,2:feeName3,3:
+feeName1,1:feeName3,3:feeName1,1:
+
+200086:first last86:Biology:2.0:KPN
+courseName0,0:courseName1,1:courseName3,3:
+courseName3,3:courseName1,1:courseName1,1:
+feeName2,2:feeName0,0:feeName0,0:
+feeName0,0:feeName0,0:feeName3,3:
+
+200087:first last87:Biology:2.0:KPN
+courseName1,1:courseName0,0:courseName2,2:
+courseName3,3:courseName2,2:courseName0,0:
+feeName3,3:feeName1,1:feeName1,1:
+feeName1,1:feeName3,3:feeName1,1:
+
+200088:first last88:Biology:2.0:KPN
+courseName0,0:courseName0,0:courseName3,3:
+courseName2,2:courseName2,2:courseName3,3:
+feeName3,3:feeName0,0:feeName0,0:
+feeName2,2:feeName2,2:feeName2,2:
+
+200089:first last89:Biology:3.0:KPN
+courseName0,0:courseName2,2:courseName3,3:
+courseName1,1:courseName3,3:courseName2,2:
+feeName1,1:feeName3,3:feeName0,0:
+feeName2,2:feeName1,1:feeName1,1:
+
+200090:first last90:Bussiness:1.0:KPN
+courseName2,2:courseName0,0:courseName1,1:
+courseName2,2:courseName1,1:courseName3,3:
+feeName1,1:feeName3,3:feeName0,0:
+feeName0,0:feeName2,2:feeName3,3:
+
+200091:first last91:ComputerScience:0.0:KPN
+courseName1,1:courseName1,1:courseName3,3:
+courseName0,0:courseName2,2:courseName3,3:
+feeName0,0:feeName2,2:feeName0,0:
+feeName1,1:feeName3,3:feeName3,3:
+
+200092:first last92:Biology:1.0:KPN
+courseName3,3:courseName2,2:courseName0,0:
+courseName1,1:courseName3,3:courseName2,2:
+feeName2,2:feeName2,2:feeName0,0:
+feeName2,2:feeName3,3:feeName1,1:
+
+200093:first last93:Biology:3.0:KPN
+courseName3,3:courseName3,3:courseName3,3:
+courseName0,0:courseName0,0:courseName0,0:
+feeName3,3:feeName2,2:feeName2,2:
+feeName0,0:feeName2,2:feeName3,3:
+
+200094:first last94:Biology:3.0:KPN
+courseName0,0:courseName3,3:courseName2,2:
+courseName3,3:courseName0,0:courseName3,3:
+feeName0,0:feeName1,1:feeName3,3:
+feeName3,3:feeName0,0:feeName2,2:
+
+200095:first last95:Biology:3.0:KPN
+courseName2,2:courseName2,2:courseName0,0:
+courseName0,0:courseName1,1:courseName0,0:
+feeName0,0:feeName0,0:feeName1,1:
+feeName3,3:feeName2,2:feeName1,1:
+
+200096:first last96:Bussiness:3.0:KPN
+courseName1,1:courseName3,3:courseName2,2:
+courseName1,1:courseName3,3:courseName3,3:
+feeName3,3:feeName1,1:feeName0,0:
+feeName2,2:feeName2,2:feeName1,1:
+
+200097:first last97:Bussiness:0.0:KPN
+courseName2,2:courseName3,3:courseName2,2:
+courseName1,1:courseName1,1:courseName3,3:
+feeName0,0:feeName3,3:feeName3,3:
+feeName0,0:feeName2,2:feeName2,2:
+
+200098:first last98:Biology:0.0:KPN
+courseName2,2:courseName1,1:courseName0,0:
+courseName3,3:courseName0,0:courseName0,0:
+feeName1,1:feeName0,0:feeName2,2:
+feeName3,3:feeName2,2:feeName1,1:
+
+200099:first last99:Biology:3.0:KPN
+courseName2,2:courseName0,0:courseName2,2:
+courseName0,0:courseName1,1:courseName2,2:
+feeName3,3:feeName1,1:feeName0,0:
+feeName2,2:feeName0,0:feeName2,2:

@@ -16,8 +16,9 @@ class ImportConnectorTest {
                 + "\n"
                 + "line 4";
 
-        String address = "https://raw.githubusercontent.com/NB00001100/COMP2633-ASSIGNMENT/main/res/TestFile1.txt?token=GHSAT0AAAAAABSXPZGDZJX2CJAABJGCLJWIYSLNKKA";
+        String address = "https://raw.githubusercontent.com/NB00001100/COMP2633-ASSIGNMENT/main/res/StudentFile.txt?token=GHSAT0AAAAAABSXPZGDRO7VKQ7K42ACNMEMYSLQDUQ";
         String fromFile = ImportConnector.getTextFromURL(address);
+        System.out.println(fromFile);
 
         for (int i = 0; i < fromFile.length(); i++) {
             assertEquals(testText.charAt(i), fromFile.charAt(i));
