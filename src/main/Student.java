@@ -1,3 +1,5 @@
+package main;
+
 public class Student {
 
     private double gpa;
@@ -14,6 +16,55 @@ public class Student {
                                                    // fees.
     // they can only take 5 courses currently and 40 courses in their entire
     // academic career. if you want to change that change the size of them.
+
+
+    public Student(double gpa, String name, String major, int studentID, String studentPassword, Fees[] textOutstandingFees,
+            Fees[] textPaidFees, Course[] textCurrCourse, Course[] textPastCourse) {
+        super();
+        this.gpa = gpa;
+        this.name = name;
+        this.major = major;
+        this.studentID = studentID;
+        this.studentPassword = studentPassword;
+        intializeArrays();
+
+        for(int i = 0; i< textCurrCourse.length; i++)
+        {
+
+            currentCourses[i] = textCurrCourse[i];
+
+        }
+
+        for(int i = 0; i< textPastCourse.length; i++)
+        {
+
+            pastCourses[i] = textPastCourse[i];
+
+        }
+
+
+        for(int i = 0; i< textPaidFees.length; i++)
+        {
+
+            paidFees[i] = textPaidFees[i];
+
+        }
+
+
+        for(int i = 0; i< textOutstandingFees.length; i++)
+        {
+
+            outstandingFees[i] = textOutstandingFees[i];
+
+        }
+
+
+
+
+    }
+
+
+
 
     public void intializeArrays() {
         int outStandingFeesCounter = 0;
@@ -49,6 +100,7 @@ public class Student {
         }
 
     }
+
 
     public double getGpa() {
         return gpa;

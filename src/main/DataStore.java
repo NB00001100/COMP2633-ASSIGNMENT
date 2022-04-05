@@ -17,20 +17,21 @@ public  class DataStore {
 
       try {
 
-        String currLine = reader.readLine();
 
+        String currLine = reader.readLine();
         String [] studentFields = currLine.split(":");
         int id = Integer.parseInt(studentFields[0]);
         String name = studentFields[1];
         String major = studentFields[2];
-        double GPA = Double.parseDouble(studentFields[3]);
-        String pass = studentFields[4];
+        double gpa = Double.parseDouble(studentFields[3]);
+        String passWord = studentFields[4];
 
         String [] courseFields = null;
 
 
+/*create the current courses array*/
+/***************************************************************/
         currLine = reader.readLine();
-
         studentFields = currLine.split(":");
 
         Course[] currCourses = new Course [studentFields.length];
@@ -40,7 +41,8 @@ public  class DataStore {
             currCourses[i] = new Course(courseFields[0], Integer.parseInt(courseFields[1]));
         }
 
-
+/*create the past courses array*/
+/*********************************************************/
         currLine = reader.readLine();
         studentFields = currLine.split(":");
 
@@ -50,6 +52,41 @@ public  class DataStore {
             courseFields = studentFields[i].split(",");
             pastCourse[i] = new Course(courseFields[0], Integer.parseInt(courseFields[1]));
         }
+
+
+/*create the current fees array*/
+/***********************************************************/
+        currLine = reader.readLine();
+        studentFields = currLine.split(":");
+
+        Fees[] currFee = new Fees [studentFields.length];
+
+        for (int i = 0; i < studentFields.length; i++) {
+            courseFields = studentFields[i].split(",");
+            currFee[i] = new Fees(courseFields[0], Integer.parseInt(courseFields[1]));
+        }
+
+/*create the overdue fees array*/
+/****************************************************************/
+        currLine = reader.readLine();
+        studentFields = currLine.split(":");
+
+        Fees[] overDueFee = new Fees [studentFields.length];
+
+        for (int i = 0; i < studentFields.length; i++) {
+            courseFields = studentFields[i].split(",");
+            overDueFee[i] = new Fees(courseFields[0], Integer.parseInt(courseFields[1]));
+        }
+
+
+
+       Student newStudent = new Student(gpa, name, major, id, passWord,overDueFee,
+                                       currFee, currCourses, pastCourse);
+
+
+
+       studentStorage.put(id, newStudent);
+
 
 
     } catch (IOException e) {
