@@ -1,3 +1,5 @@
+package main;
+
 public class Student {
 
     private float gpa;
