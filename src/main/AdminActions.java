@@ -25,24 +25,29 @@ public class AdminActions {
 
     public static void editCurrentCourses(PrintStream output, Scanner input)
     {
+          // remove from array and shift
 
     }
 
     public static void editPreviousCourses(PrintStream output, Scanner input)
     {
+          // remove from array and shift
 
     }
     public static void editGpa(PrintStream output, Scanner input)
     {
+        
 
     }
     public static void editOutstandingFees(PrintStream output, Scanner input)
     {
+          // remove from array and shift
 
     }
     public static void editFeesPaid(PrintStream output, Scanner input)
     {
-
+        // remove from array and shift
+ 
     }
     public static void editStudentId(PrintStream output, Scanner input)
     {
