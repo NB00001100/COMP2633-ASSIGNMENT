@@ -6,21 +6,35 @@ public class Course {
 
     private int courseID;
 
-    public String getCourseName() {
-        return courseName;
-    }
+
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
-    public int getCourseID() {
-        return courseID;
-    }
 
     public void setCourseID(int courseID) {
         this.courseID = courseID;
     }
+
+
+    public Course(String courseName, int courseID) {
+        super();
+        this.courseName = courseName;
+        this.courseID = courseID;
+    }
+
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+
+    public int getCourseID() {
+        return courseID;
+    }
+
+
 
 
 

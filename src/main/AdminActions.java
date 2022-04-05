@@ -32,14 +32,14 @@ public class AdminActions {
     }
 
     public static void editGpa(PrintStream output, Scanner input) {
-        float new_gpa = 0;
+        double new_gpa = 0;
         Student gpaChanged = null;
         enterStudentInfo(output, input);
         output.println();
         output.println();
         output.println(" Enter change in GPA");
         output.print(" New GPA: ");
-        new_gpa = input.nextFloat();
+        new_gpa = input.nextDouble();
         gpaChanged = DataStore.findStudent(student_id, name);
         gpaChanged.setGpa(new_gpa);
         DataStore.getStudentStorage().replace(student_id, gpaChanged);
@@ -47,7 +47,6 @@ public class AdminActions {
     }
 
     public static void editOutstandingFees(PrintStream output, Scanner input) {
-        // remove from array and shift
 
     }
 
@@ -86,7 +85,59 @@ public class AdminActions {
         DataStore.getStudentStorage().replace(student_id, passwordChanged);
     }
 
-    public static void addStudent(PrintStream output, Scanner input) {
+    public static void addNewStudent(PrintStream output, Scanner input) {
+
+        double gpa = 0.0;
+        String major = "";
+        String password = "";
+        Student new_student = new Student();
+        new_student.intializeArrays();
+        int options = 0;
+
+        output.println();
+        output.println();
+        output.println(" Enter the following information for the new student");
+        output.print(" New student's University ID: ");
+        setStudent_id(input.nextInt());
+        output.println();
+        output.print(" New student's Name: ");
+        setName(input.nextLine());
+        output.println();
+        output.print(" New student's major: ");
+        major = input.nextLine();
+        output.println();
+        output.print(" New student's GPA: ");
+        gpa = input.nextDouble();
+        output.println();
+        output.print(" New student's password: ");
+        password = input.nextLine();
+        output.println();
+        output.print(" To enter current courses enter: 2");
+        options = input.nextInt();
+        if (options == 2) {
+            int continue_adding = 1;
+            
+            while (continue_adding == 1) {
+                String courseName = "";
+                int courseId = 0;
+                output.println();
+                output.println();
+                output.print(" Enter course name: ");
+                courseName = input.nextLine();
+                output.println();
+                output.print(" Enter Course ID: ");
+                courseId = input.nextInt();
+                output.println();
+                output.print(" To stop adding current courses enter: 2");
+                new
+            }
+
+        }
+        new_student.setName(getName());
+        new_student.setMajor(major);
+        new_student.setStudentID(student_id);
+        new_student.setGpa(gpa);
+        new_student.setPassword(password);
 
     }
 

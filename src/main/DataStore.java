@@ -25,17 +25,32 @@ public  class DataStore {
         String major = studentFields[2];
         double GPA = Double.parseDouble(studentFields[3]);
         String pass = studentFields[4];
-        Course [] currCourses = null;
+
         String [] courseFields = null;
+
 
         currLine = reader.readLine();
 
         studentFields = currLine.split(":");
+
+        Course[] currCourses = new Course [studentFields.length];
+
         for (int i = 0; i < studentFields.length; i++) {
             courseFields = studentFields[i].split(",");
-
-            //currCourses[i] = new Course(courseFields[0], courseFields[1]);
+            currCourses[i] = new Course(courseFields[0], Integer.parseInt(courseFields[1]));
         }
+
+
+        currLine = reader.readLine();
+        studentFields = currLine.split(":");
+
+        Course[] pastCourse = new Course [studentFields.length];
+
+        for (int i = 0; i < studentFields.length; i++) {
+            courseFields = studentFields[i].split(",");
+            pastCourse[i] = new Course(courseFields[0], Integer.parseInt(courseFields[1]));
+        }
+
 
     } catch (IOException e) {
         // TODO Auto-generated catch block
