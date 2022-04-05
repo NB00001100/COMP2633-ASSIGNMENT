@@ -1,8 +1,6 @@
-package main;
-
 public class Student {
 
-    private float gpa;
+    private double gpa;
     private String name;
     private String major;
     private int studentID;
@@ -17,36 +15,34 @@ public class Student {
     // they can only take 5 courses currently and 40 courses in their entire
     // academic career. if you want to change that change the size of them.
 
-    public void intializeArrays(Fees[] outStandingFees, Fees[] paidFees, Course[] currentCourses,
-            Course[] pastCourses) {
+    public void intializeArrays() {
         int outStandingFeesCounter = 0;
         int feesPaidCounter = 0;
         int currentCoursesCounter = 0;
         int pastCoursesCounter = 0;
 
-        while (outStandingFeesCounter < outStandingFees.length) {
-            outStandingFees[outStandingFeesCounter] = null;
+        while (outStandingFeesCounter < getOutstandingFees().length) {
+            this.outstandingFees[outStandingFeesCounter] = null;
 
             outStandingFeesCounter++;
 
         }
 
-        while (feesPaidCounter < paidFees.length) {
-            paidFees[feesPaidCounter] = null;
-
+        while (feesPaidCounter < getPaidFees().length) {
+            this.paidFees[feesPaidCounter] = null;
             feesPaidCounter++;
 
         }
 
-        while (currentCoursesCounter < currentCourses.length) {
-            currentCourses[currentCoursesCounter] = null;
+        while (currentCoursesCounter < getCurrentCourses().length) {
+            this.currentCourses[currentCoursesCounter] = null;
 
             currentCoursesCounter++;
 
         }
 
-        while (pastCoursesCounter < pastCourses.length) {
-            pastCourses[pastCoursesCounter] = null;
+        while (pastCoursesCounter < getPastCourses().length) {
+            this.pastCourses[pastCoursesCounter] = null;
 
             pastCoursesCounter++;
 
@@ -54,11 +50,11 @@ public class Student {
 
     }
 
-    public float getGpa() {
+    public double getGpa() {
         return gpa;
     }
 
-    public void setGpa(float gpa) {
+    public void setGpa(double gpa) {
         this.gpa = gpa;
 
     }
