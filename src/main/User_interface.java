@@ -53,75 +53,36 @@ public class User_interface {
 
 
     }
-    public static boolean student_interface() {
 
-
-
-
-        PrintStream output = new PrintStream(System.out);
-        Scanner input = new Scanner(System.in);
-
-        int look_at_courses = 0;
-
-        show_student_info(output);
-
-        look_at_courses = input.nextInt();
-
-        if(look_at_courses == 1)
-       {
-           // shows current courses taken
-           show_courses(DataStore.getStudentStorage().get(getUser_id()).getCurrentCourses(), output);
-       }
-       else if(look_at_courses == 2)
-       {
-           // show previous courses
-           show_courses(DataStore.getStudentStorage().get(getUser_id()).getPastCourses(), output);
-       }
-       else if(look_at_courses == 3)
-       {
-           // view outstanding fees
-           show_fees(DataStore.getStudentStorage().get(getUser_id()).getOutstandingFees(),output);
-       }
-       else if(look_at_courses == 4)
-       {
-           // view paid fees
-           show_fees(DataStore.getStudentStorage().get(getUser_id()).getPaidFees(),output);
-
-       }
-       else if( look_at_courses == 8)
-       {
-           input.close();
-           output.close();
-           return false;
-       }
-        input.close();
-        output.close();
-        return true;
-
-
-
-
-    }
 
     public static void login()
     {
-        Login user = new Login(); // may have reference problem
+        Login user = new Login();
 
-        if(user.attemptLogin(user_id, user_password) && user.getUserIsAdmin() == false)
+        if(user.attemptLogin(user_id, user_password) && user.getUserIsAdmin() == false) // checks if login was successful and if the information entered is that of a student
         {
             boolean run = true;
+
             while(run == true)
             {
-                run = student_interface();
+                run = StudentInterface.student_interface(user_id);
 
             }
         }
-        else if(user.attemptLogin(user_id, user_password) && user.getUserIsAdmin() == true)
+        else if(user.attemptLogin(user_id, user_password) && user.getUserIsAdmin() == true) // checks if login was successful and if the information entered is that of a administrator
         {
-            // run admin_interface
+            boolean run = true;
+
+            while(run == true)
+            {
+                run = AdminInterface.Admin_interface();
+            }
+
         }
 
     }
+
+
 
     public static void show_courses(Course [] courses, PrintStream output)
     {
@@ -163,36 +124,6 @@ public class User_interface {
 
         return;
     }
-
-    public static void show_student_info(PrintStream output)
-    {
-        output.println();
-        output.println();
-        output.print(" Name: ");
-        output.println(DataStore.getStudentStorage().get(getUser_id()).getName());
-        output.println();
-        output.print(" Student ID: ");
-        output.println(DataStore.getStudentStorage().get(getUser_id()).getStudentID());
-        output.println();
-        output.print(" Major: ");
-        output.println(DataStore.getStudentStorage().get(getUser_id()).getMajor());
-        output.println();
-        output.print(" GPA: ");
-        output.println(DataStore.getStudentStorage().get(getUser_id()).getGpa());
-        output.println();
-        output.println();
-        output.println(" To view current courses enter: 1");
-        output.println(" To view past courses enter: 2");
-        output.println(" To view outstanding fees enter: 3");
-        output.println(" To view paid fees enter: 4");
-        output.println();
-        output.println(" To leave enter: 8 ");
-        output.println(" Enter here: ");
-
-        return;
-
-    }
-
 
     public static String getUser_password() {
         return user_password;
