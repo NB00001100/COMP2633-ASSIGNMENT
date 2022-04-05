@@ -2,24 +2,16 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class AdminActions {
-  
-  // might make a method which asks for id and and name to reduce code duplication
-  // if you read this implement the other methods in this class.
+
+    private static int student_id = 0;
+    private static String name = "";
+
 
     public static void editMajor(PrintStream output, Scanner input)
     {
-        String name = null;
-        int student_id = 0;
         String major = null;
         Student majorChanged = null;
-        output.println();
-        output.println();
-        output.println(" Enter the KPN University ID and Student's name");
-        output.print(" University ID: ");
-        student_id = input.nextInt();
-        output.println();
-        output.print(" Student's Name: ");
-        name = input.nextLine();
+        enterStudentInfo(output,input);
         output.println();
         output.println();
         output.println(" Enter the change in major ");
@@ -68,6 +60,35 @@ public class AdminActions {
     {
 
     }
+    public static void enterStudentInfo(PrintStream output, Scanner input)
+    {
+        output.println();
+        output.println();
+        output.println(" Enter the KPN University ID and Student's name");
+        output.print(" University ID: ");
+        setStudent_id(input.nextInt());
+        output.println();
+        output.print(" Student's Name: ");
+        setName(input.nextLine());
+    }
+
+    public static int getStudent_id() {
+        return student_id;
+    }
+
+    public static void setStudent_id(int student_id) {
+        AdminActions.student_id = student_id;
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        AdminActions.name = name;
+    }
+
+
 
 
 }
