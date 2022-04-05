@@ -31,6 +31,7 @@ public abstract class ImportConnector {
                 contents.append(currLine);
                 contents.append("\n");
             }
+            contents.append("\0");
 
             return contents.toString().trim();
 

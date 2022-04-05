@@ -1,0 +1,11 @@
+200000:first last0:ComputerScience:2.0:KPN
+courseName1,1:courseName3,3:courseName1,1:
+courseName2,2:courseName3,3:courseName3,3:
+feeName3,3:feeName2,2:feeName0,0:
+feeName1,1:feeName3,3:feeName1,1:
+
+200001:first last1:Bussiness:3.0:KPN
+courseName1,1:courseName1,1:courseName3,3:
+courseName3,3:courseName2,2:courseName2,2:
+feeName0,0:feeName1,1:feeName1,1:
+feeName1,1:feeName1,1:feeName0,0:
