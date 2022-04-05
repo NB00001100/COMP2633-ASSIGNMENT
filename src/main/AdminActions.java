@@ -91,6 +91,25 @@ public class AdminActions {
     }
 
     public static void removeStudent(PrintStream output, Scanner input) {
+        int remove = 0;
+        output.println();
+        output.println();
+        output.println(" Enter the KPN University ID and Student's name you wish to remove from the system");
+        output.print(" University ID: ");
+        setStudent_id(input.nextInt());
+        output.println();
+        output.print(" Student's Name: ");
+        setName(input.nextLine());
+        output.println();
+        output.println();
+        output.println(" To continue the removal of student enter: 1");
+        output.println(" To not continue with the removal of the student enter: 2");
+        output.print(" Continue?: ");
+        remove = input.nextInt();
+
+        if (remove == 1) {
+            DataStore.getStudentStorage().remove(student_id);
+        }
 
     }
 
