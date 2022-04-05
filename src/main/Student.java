@@ -14,7 +14,7 @@ public class Student {
     private Course [] pastCourses = new Course[40];  // this is important for user interface otherwise it messes up printing the students info for past/current classes taken and fees.
      // they can only take 5 courses currently and 40 courses in their entire academic career. if you want to change that change the size of them.
 
-
+    Student
 
     public void intializeArrays(Fees [] outStandingFees, Fees [] paidFees, Course [] currentCourses, Course [] pastCourses)
     {

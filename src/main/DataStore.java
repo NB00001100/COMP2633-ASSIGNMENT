@@ -1,4 +1,9 @@
-import  java.util.HashMap;
+package main;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.HashMap;
 
 public  class DataStore {
 
@@ -6,8 +11,37 @@ public  class DataStore {
 
   private static HashMap<Integer, Admin> adminStorage = new HashMap<Integer, Admin>();
 
+  public static void fillStudentStorage(String contents) {
 
+      BufferedReader reader = new BufferedReader(new StringReader(contents));
 
+      try {
+
+        String currLine = reader.readLine();
+
+        String [] studentFields = currLine.split(":");
+        int id = Integer.parseInt(studentFields[0]);
+        String name = studentFields[1];
+        String major = studentFields[2];
+        double GPA = Double.parseDouble(studentFields[3]);
+        String pass = studentFields[4];
+        Course [] currCourses = null;
+        String [] courseFields = null;
+
+        currLine = reader.readLine();
+
+        studentFields = currLine.split(":");
+        for (int i = 0; i < studentFields.length; i++) {
+            courseFields = studentFields[i].split(",");
+
+            //currCourses[i] = new Course(courseFields[0], courseFields[1]);
+        }
+
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+  }
 
   public static Student findStudent(int iD, String password)
   {
@@ -35,8 +69,6 @@ public  class DataStore {
       new_student.setPastCourses(past);
       new_student.setOutstandingFees(outstanding);
       new_student.setPaidFees(paid);
-
-
 
 
   }
