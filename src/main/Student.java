@@ -1,4 +1,7 @@
 package main;
+/*
+This class holds all the values a student can have
+*/
 
 public class Student {
 
@@ -9,13 +12,11 @@ public class Student {
     private String studentPassword;
     private Fees[] outstandingFees = new Fees[50];
     private Fees[] paidFees = new Fees[50];
-    private Course[] currentCourses = new Course[5]; // when we start adding to the courses or fees using our read, we
-                                                     // first need to initialize all elements to null
-    private Course[] pastCourses = new Course[40]; // this is important for user interface otherwise it messes up
-                                                   // printing the students info for past/current classes taken and
-                                                   // fees.
-    // they can only take 5 courses currently and 40 courses in their entire
-    // academic career. if you want to change that change the size of them.
+    private Course[] currentCourses = new Course[5]; 
+                                                     
+    private Course[] pastCourses = new Course[40]; 
+                                                   
+                                                   
 
 
     public Student(double gpa, String name, String major, int studentID, String studentPassword, Fees[] textOutstandingFees,
@@ -77,6 +78,7 @@ public class Student {
 
 
 
+    // This method intializes all the elements of the student class to null because show_fees and show_courses rely on that
     public void intializeArrays() {
         int outStandingFeesCounter = 0;
         int feesPaidCounter = 0;
