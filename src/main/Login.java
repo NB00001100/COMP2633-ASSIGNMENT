@@ -1,7 +1,7 @@
 package main;
 
 
-// author: Nimrat Brar, add names
+// author: Nimrat Brar, Kushal Saini, Pelvain Dhanda
 
 public class Login {
 
@@ -15,6 +15,7 @@ public class Login {
         this.userIsAdmin = userIsAdmin;
     }
 
+    // determines if the login information entered was successful by determining if they are in the studentStorage hashmap
     public boolean attemptLogin(int ID, String password)
     {
         boolean id_in_sys = false;
@@ -24,11 +25,11 @@ public class Login {
         if(ID >= 200000) // student id is greater than 200000
         {
 
-           if(DataStore.getStudentStorage().containsKey(ID) == true)
+           if(DataStore.getStudentStorage().containsKey(ID) == true) // determines if the 
            {
                id_in_sys = true;
 
-               if(DataStore.getStudentStorage().get(ID).getPassword().equals(password) == true) // might have errors
+               if(DataStore.getStudentStorage().get(ID).getPassword().equals(password) == true) // determines if password entered and in system match
                {
                    password_in_sys = true;
                }
@@ -46,7 +47,7 @@ public class Login {
             if(DataStore.getAdminStorage().containsKey(ID) == true)
             {
                 id_in_sys = true;
-                if(DataStore.getAdminStorage().get(ID).getAdminPassword().equals(password)== true) // might have errors
+                if(DataStore.getAdminStorage().get(ID).getAdminPassword().equals(password)== true) // determines if password entered and in system match
                 {
                     password_in_sys = true;
                 }
