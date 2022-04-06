@@ -216,7 +216,57 @@ public  class DataStore {
         }
     }
 
+    /*
+     * This method returns a String which contains all the student information
+     * in the database in the format used in "StudentFile.txt"
+     */
+    public static String stringifyStudent() {
 
+        StringBuilder contents = new StringBuilder();
+
+        studentStorage.forEach((k,v) -> {
+
+            contents.append(k + ":"
+                    + v.getName() + ":"
+                    + v.getMajor() + ":"
+                    + v.getGpa() + ":"
+                    + v.getPassword() + "\n");
+
+            int counter = 0;
+            while (v.getCurrentCourses()[counter] != null) {
+                contents.append(v.getCurrentCourses()[counter].getCourseName() + ","
+                        + v.getCurrentCourses()[counter].getCourseID() + ":");
+                counter++;
+            }
+            contents.append("\n");
+
+            counter = 0;
+            while (v.getPastCourses()[counter] != null) {
+                contents.append(v.getPastCourses()[counter].getCourseName() + ","
+                        + v.getPastCourses()[counter].getCourseID() + ":");
+                counter++;
+            }
+            contents.append("\n");
+
+            counter = 0;
+            while (v.getOutstandingFees()[counter] != null) {
+                contents.append(v.getOutstandingFees()[counter].getFeeName() + ","
+                        + v.getOutstandingFees()[counter].getFeeAmount() + ":");
+                counter++;
+            }
+            contents.append("\n");
+
+            counter = 0;
+            while (v.getPaidFees()[counter] != null) {
+                contents.append(v.getPaidFees()[counter].getFeeName() + ","
+                        + v.getPaidFees()[counter].getFeeAmount() + ":");
+                counter++;
+            }
+            contents.append("\n\n");
+        });
+
+        return contents.toString().trim();
+    }
 
     public static HashMap<Integer, Student> getStudentStorage() {
         return studentStorage;
