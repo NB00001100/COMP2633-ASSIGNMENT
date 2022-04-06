@@ -190,7 +190,7 @@ public class AdminActions {
         {
         output.println();
         output.print(" New student's Name: ");
-        setName(input.next());
+        setName(input.next() + input.next());
         output.println();
         output.print(" New student's major: ");
         major = input.next();
@@ -260,7 +260,7 @@ public class AdminActions {
         setStudent_id(input.nextInt());
         output.println();
         output.print(" Student's Name: ");
-        setName(input.next());
+        setName(input.next() + input.next());
         output.println();
         output.println();
         output.println(" To continue the removal of student enter: 1");
@@ -293,6 +293,7 @@ public class AdminActions {
     {
         int continue_adding = 1;
         int counter = 0;
+        Course newCourse = new Course(name, counter);
 
         while (continue_adding == 1 && counter < new_student.getCurrentCourses().length) {
             String courseName = "";
@@ -309,8 +310,10 @@ public class AdminActions {
             output.println(" To continue adding to current courses enter: 1");
             output.print(" Enter here: ");
             continue_adding = input.nextInt();
-            new_student.getCurrentCourses()[counter].setCourseName(courseName);
-            new_student.getCurrentCourses()[counter].setCourseID(courseId);
+            Course temp = new Course(courseName, courseId);
+            new_student.getCurrentCourses()[counter] = temp;
+            //new_student.getCurrentCourses()[counter].setCourseName(courseName);
+            //new_student.getCurrentCourses()[counter].setCourseID(courseId);
             counter++;
         }
         return;
@@ -336,8 +339,9 @@ public class AdminActions {
             output.println(" To continue adding to outstanding fees enter: 1");
             output.print(" Enter here: ");
             continue_adding = input.nextInt();
-            new_student.getOutstandingFees()[counter].setFeeName(feeName);
-            new_student.getOutstandingFees()[counter].setFeeAmount(feeAmount);
+            Fees temp = new Fees(feeName, feeAmount);
+            new_student.getOutstandingFees()[counter] = temp;
+            //new_student.getOutstandingFees()[counter].setFeeAmount(feeAmount);
             counter++;
         }
 
