@@ -1,6 +1,6 @@
 package main;
 
-// This method holds all the info a fee can have
+// This class holds all the info a fee can have
 public class Fees {
 
     private String feeName;
