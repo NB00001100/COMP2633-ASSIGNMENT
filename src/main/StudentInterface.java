@@ -2,9 +2,11 @@ package main;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-
+// This class is the interface for the user who is a student it displays their options and allows them to view their information
 public class StudentInterface {
 
+    // This method displays the options and information available to the user who is a student. 
+    // The options allows them to view more info about their courses and fees, and allows them to quit the program
     public static boolean student_interface(int user_id) {
 
 
@@ -12,6 +14,7 @@ public class StudentInterface {
 
         PrintStream output = new PrintStream(System.out);
         Scanner input = new Scanner(System.in);
+       
 
         int options = 0;
 
@@ -55,6 +58,7 @@ public class StudentInterface {
 
 
     }
+    // This displays the options and information of user who is a student
     public static void show_student_info(PrintStream output, int user_id)
     {
         output.println();
@@ -86,6 +90,8 @@ public class StudentInterface {
         return;
     }
 
+    // this prints out a student's info, this method is used by a method iniside of admin action to view a particular
+    // students information
     public static void info(PrintStream output, int user_id) {
         output.println();
         output.println();
