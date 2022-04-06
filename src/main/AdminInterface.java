@@ -90,7 +90,7 @@ public class AdminInterface {
         output.println(" To edit fees paid enter: 6");
         output.println(" To edit student id enter: 7");
         output.println(" To edit student password enter 8 :");
-        output.println(" To add a student to the Student Database System enter: 9");
+        output.println(" To add a new student to the Student Database System enter: 9");
         output.println(" To remove a student from the Student DataBase System enter: 10 ");
         output.println(" To quit enter: 12");
         output.println();
