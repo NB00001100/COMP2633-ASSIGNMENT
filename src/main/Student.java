@@ -1,5 +1,3 @@
-package main;
-
 public class Student {
 
     private double gpa;
@@ -62,6 +60,14 @@ public class Student {
 
 
     }
+
+
+
+
+
+    public Student() {
+                                                }
+
 
 
 
