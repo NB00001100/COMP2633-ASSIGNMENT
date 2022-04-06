@@ -5,6 +5,11 @@ public class Admin {
     private int adminID;
     private String adminPassword;
 
+    public Admin(int adminID, String adminPassword) {
+        this.adminID = adminID;
+        this.adminPassword = adminPassword;
+    }
+
     public int getAdminID() {
         return adminID;
     }
