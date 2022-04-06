@@ -2,11 +2,14 @@ package main;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-
+// This class shows the options and accepts input from the user who is administrator, to view,add,remove,or edit student's information in a system 
 public class AdminInterface {
 
 
 
+    // This method shows what the user who is an admin can do.
+    // It accepts input from the user and makes the appropiate chnages
+    // The user can edit any information a student has
     public static boolean Admin_interface() {
 
         PrintStream output = new PrintStream(System.out);
@@ -80,6 +83,7 @@ public class AdminInterface {
     }
 
 
+    // This method displays what the user who is a admin can do
     public static  void show_admin_options(PrintStream output)
     {
         output.println();
