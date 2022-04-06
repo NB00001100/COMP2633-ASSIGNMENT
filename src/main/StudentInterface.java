@@ -20,32 +20,32 @@ public class StudentInterface {
         options = input.nextInt();
 
         if(options == 1)
-       {
-           // shows current courses taken
-          User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getCurrentCourses() , output);
-       }
-       else if( options == 2)
-       {
-           // show previous courses
-           User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getPastCourses(), output);
-       }
-       else if( options == 3)
-       {
-           // view outstanding fees
-           User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getOutstandingFees(),output);
-       }
-       else if( options == 4)
-       {
-           // view paid fees
-           User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getPaidFees(),output);
+        {
+            // shows current courses taken
+            User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getCurrentCourses() , output);
+        }
+        else if( options == 2)
+        {
+            // show previous courses
+            User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getPastCourses(), output);
+        }
+        else if( options == 3)
+        {
+            // view outstanding fees
+            User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getOutstandingFees(),output);
+        }
+        else if( options == 4)
+        {
+            // view paid fees
+            User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getPaidFees(),output);
 
-       }
-       else if( options == 8)
-       {
-           input.close();
-           output.close();
-           return false;
-       }
+        }
+        else if( options == 8)
+        {
+            input.close();
+            output.close();
+            return false;
+        }
 
         //input.close();
         //output.close();
@@ -103,6 +103,30 @@ public class StudentInterface {
         output.println();
         output.print(" GPA: ");
         output.println(DataStore.getStudentStorage().get(user_id).getGpa());
+        output.println();
+        output.println();
+        output.println(" -------------------------------------------------------");
+        output.println();
+        output.println(" Current courses");
+        User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getCurrentCourses() , output);
+        output.println();
+        output.println();
+        output.println(" -------------------------------------------------------");
+        output.println();
+        output.println(" Previous courses");
+        User_interface.show_courses(DataStore.getStudentStorage().get(user_id).getPastCourses(), output);
+        output.println();
+        output.println();
+        output.println(" -------------------------------------------------------");
+        output.println();
+        output.println(" Outstanding fees");
+        User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getOutstandingFees(),output);
+        output.println();
+        output.println();
+        output.println(" -------------------------------------------------------");
+        output.println();
+        output.println(" Paid fees");
+        User_interface.show_fees(DataStore.getStudentStorage().get(user_id).getPaidFees(),output);
         output.println();
         output.println();
     }
