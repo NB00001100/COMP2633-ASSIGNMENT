@@ -1,5 +1,6 @@
 package main;
 
+// This class contains all the info a course can have.
 public class Course {
 
     private String courseName;
