@@ -1,5 +1,6 @@
 package main;
 
+// This class contains all info a admin in the system can have.
 public class Admin {
 
     private int adminID;
