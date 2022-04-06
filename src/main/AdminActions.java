@@ -129,7 +129,6 @@ public class AdminActions {
     }
 
     public static void editStudentId(PrintStream output, Scanner input) {
-
         int new_studentId = 0;
         enterStudentInfo(output, input);
         output.println();
@@ -138,6 +137,18 @@ public class AdminActions {
         output.print(" New Student ID: ");
         new_studentId = input.nextInt();
         Student temp = new Student();
+        temp.setCurrentCourses(DataStore.getStudentStorage().get(student_id).getCurrentCourses());
+        temp.setGpa(DataStore.getStudentStorage().get(student_id).getGpa());
+        temp.setMajor(DataStore.getStudentStorage().get(student_id).getMajor());
+        temp.setName(name);
+        temp.setOutstandingFees(DataStore.getStudentStorage().get(student_id).getOutstandingFees());
+        temp.setPaidFees(DataStore.getStudentStorage().get(student_id).getPaidFees());
+        temp.setPassword(DataStore.getStudentStorage().get(student_id).getPassword());
+        temp.setPastCourses(DataStore.getStudentStorage().get(student_id).getPastCourses());
+        temp.setStudentID(new_studentId);
+
+        DataStore.getStudentStorage().remove(student_id);
+        DataStore.getStudentStorage().put(new_studentId, temp);
     }
 
     public static void editStudentPassword(PrintStream output, Scanner input) {
