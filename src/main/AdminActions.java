@@ -137,6 +137,8 @@ public class AdminActions {
         output.print(" New Student ID: ");
         new_studentId = input.nextInt();
         Student temp = new Student();
+        if(!DataStore.getStudentStorage().containsKey(new_studentId))
+        {
         temp.setCurrentCourses(DataStore.getStudentStorage().get(student_id).getCurrentCourses());
         temp.setGpa(DataStore.getStudentStorage().get(student_id).getGpa());
         temp.setMajor(DataStore.getStudentStorage().get(student_id).getMajor());
@@ -149,7 +151,15 @@ public class AdminActions {
 
         DataStore.getStudentStorage().remove(student_id);
         DataStore.getStudentStorage().put(new_studentId, temp);
+        }
+        else
+        {
+            output.println();
+            output.println(" Please load this option again, this ID is already in the system");
+
+        }
     }
+
 
     public static void editStudentPassword(PrintStream output, Scanner input) {
         String new_password = null;
