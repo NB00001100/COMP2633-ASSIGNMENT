@@ -104,7 +104,7 @@ public  class DataStore {
             e.printStackTrace();
         }
 
-        System.out.println(studentStorage.toString());
+        //System.out.println(studentStorage.toString());
 
     }
 
@@ -138,16 +138,16 @@ public  class DataStore {
         }
     }
 
-    public static Student findStudent(int id, String password)
+    public static Student findStudent(int id, String name)
     {
         Student foundStudent = null;
 
-        if(studentStorage.containsKey(id) == true && studentStorage.get(id).getPassword().equals(password) == true )
+        if(studentStorage.containsKey(id) == true)
         {
-            foundStudent = studentStorage.get(id);
+            return DataStore.getStudentStorage().get(id);
         }
 
-        return foundStudent;
+        return null;
     }
 
     public static void addStudentFromAdmin(String major, String password, String name, double gpa, int id, Course [] curr,
@@ -162,9 +162,7 @@ public  class DataStore {
         new_student.setStudentID(id);
         new_student.setCurrentCourses(curr);
         new_student.setPastCourses(past);
-        new_student.setOutstandingFees(outstanding);
         new_student.setPaidFees(paid);
-
 
     }
 
@@ -182,7 +180,14 @@ public  class DataStore {
         }
     }
 
+    public static String createStudentFileString() {
 
+        StringBuilder contents = new StringBuilder();
+
+        studentStorage.forEach(null);
+
+        return contents.toString().trim();
+    }
 
     public static HashMap<Integer, Student> getStudentStorage() {
         return studentStorage;

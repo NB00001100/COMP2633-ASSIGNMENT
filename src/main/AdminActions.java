@@ -30,10 +30,10 @@ public class AdminActions {
       enterStudentInfo(output, input);
 
 
-      output.println("Would you like to add or remove a current course?");
-      output.print("Add: 1");
+      output.println(" Would you like to add or remove a current course?");
+      output.print(" Add: 1");
       output.println();
-      output.println("Remove: 2");
+      output.println(" Remove: 2");
       output.print(" Enter choice: ");
       option = input.nextInt();
       output.println();
@@ -49,7 +49,7 @@ public class AdminActions {
 
           User_interface.show_courses(currStudent.getCurrentCourses(), output);
 
-          output.println(" Enter the course # you would like to change ");
+          output.print(" Enter the course # you would like to change ");
           courseIndex = input.nextInt();
 
       for (int i = 0, j = 0; i < currStudent.getCurrentCourses().length; i++) {
@@ -116,10 +116,10 @@ public class AdminActions {
         enterStudentInfo(output, input);
 
 
-        output.println("Would you like to add or remove a previous course?");
-        output.print("Add: 1");
+        output.println(" Would you like to add or remove a previous course?");
+        output.print(" Add: 1");
         output.println();
-        output.println("Remove: 2");
+        output.println(" Remove: 2");
         output.print(" Enter choice: ");
         option = input.nextInt();
         output.println();
@@ -135,7 +135,7 @@ public class AdminActions {
 
             User_interface.show_courses(pastStudent.getPastCourses(), output);
 
-            output.println(" Enter the course # you would like to change ");
+            output.print(" Enter the course # you would like to change ");
             courseIndex = input.nextInt();
 
         for (int i = 0, j = 0; i < pastStudent.getPastCourses().length; i++) {
@@ -184,12 +184,7 @@ public class AdminActions {
 
         }
 
-        pastStudent.setCurrentCourses(copyPastCourse);
-
-
-
-
-
+        pastStudent.setPastCourses(copyPastCourse);
 
     }
 
@@ -217,10 +212,10 @@ public class AdminActions {
         enterStudentInfo(output, input);
 
 
-        output.println("Would you like to add or remove a outstanding fee?");
-        output.print("Add: 1");
+        output.println(" Would you like to add or remove a outstanding fee?");
+        output.print(" Add: 1");
         output.println();
-        output.println("Remove: 2");
+        output.println(" Remove: 2");
         output.print(" Enter choice: ");
         option = input.nextInt();
         output.println();
@@ -236,7 +231,7 @@ public class AdminActions {
 
             User_interface.show_fees(currStudent.getOutstandingFees(), output);
 
-            output.println(" Enter the course # you would like to change ");
+            output.print(" Enter the fee # you would like to change ");
             courseIndex = input.nextInt();
 
         for (int i = 0, j = 0; i < currStudent.getOutstandingFees().length; i++) {
@@ -262,12 +257,12 @@ public class AdminActions {
                     copyoutFees[j++] = currStudent.getOutstandingFees()[i];
                 }
 
-            output.println(" Enter the course name and ID to add new fee ");
+            output.println(" Enter the fee name and amount to add new fee ");
             output.println();
-            output.print(" Enter course name: ");
+            output.print(" Enter fee name: ");
             courseName = input.next();
             output.println();
-            output.print(" Enter ID of course: ");
+            output.print(" Enter amount: ");
             courseID = input.nextInt();
             output.println();
 
@@ -300,10 +295,10 @@ public class AdminActions {
         enterStudentInfo(output, input);
 
 
-        output.println("Would you like to add or remove a paid fee?");
-        output.print("Add: 1");
+        output.println(" Would you like to add or remove a paid fee?");
+        output.print(" Add: 1");
         output.println();
-        output.println("Remove: 2");
+        output.println(" Remove: 2");
         output.print(" Enter choice: ");
         option = input.nextInt();
         output.println();
@@ -319,7 +314,7 @@ public class AdminActions {
 
             User_interface.show_fees(currStudent.getPaidFees(), output);
 
-            output.println(" Enter the course # you would like to change ");
+            output.print(" Enter the fee # you would like to change ");
             courseIndex = input.nextInt();
 
         for (int i = 0, j = 0; i < currStudent.getPaidFees().length; i++) {
@@ -345,12 +340,12 @@ public class AdminActions {
                     copyEditFees[j++] = currStudent.getPaidFees()[i];
                 }
 
-            output.println(" Enter the course name and ID to add new fee ");
+            output.println(" Enter the fee name and amount to add new fee ");
             output.println();
-            output.print(" Enter course name: ");
+            output.print(" Enter fee name: ");
             courseName = input.next();
             output.println();
-            output.print(" Enter ID of course: ");
+            output.print(" Enter amount: ");
             courseID = input.nextInt();
             output.println();
 
@@ -410,7 +405,7 @@ public class AdminActions {
 
 
     public static void editStudentPassword(PrintStream output, Scanner input) {
-        String new_password = null;
+        String new_password = "";
         enterStudentInfo(output, input);
         output.println();
         output.println();

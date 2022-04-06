@@ -124,12 +124,15 @@ public class User_interface {
         {
             output.println();
             output.println();
+            output.println(" Fee # " + counter);
+            output.println();
             output.print(" Fee Name: ");
             output.println(fees1[counter].getFeeName());
             output.println();
             output.print(" Fee Amount: ");
             output.print(fees1[counter].getFeeAmount());
-
+            output.println();
+            output.println("------------------");
             counter ++;
         }
 

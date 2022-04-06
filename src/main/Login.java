@@ -28,11 +28,12 @@ public class Login {
            {
                id_in_sys = true;
 
+               if(DataStore.getStudentStorage().get(ID).getPassword().equals(password) == true) // might have errors
+               {
+                   password_in_sys = true;
+               }
            }
-           if(DataStore.getStudentStorage().get(ID).getPassword().equals(password) == true) // might have errors
-           {
-               password_in_sys = true;
-           }
+
            if( id_in_sys == true && password_in_sys == true)
            {
                setUserIsAdmin(false);
@@ -45,12 +46,12 @@ public class Login {
             if(DataStore.getAdminStorage().containsKey(ID) == true)
             {
                 id_in_sys = true;
+                if(DataStore.getAdminStorage().get(ID).getAdminPassword().equals(password)== true) // might have errors
+                {
+                    password_in_sys = true;
+                }
+            }
 
-            }
-            if(DataStore.getAdminStorage().get(ID).getAdminPassword().equals(password)== true) // might have errors
-            {
-                password_in_sys = true;
-            }
             if( id_in_sys == true && password_in_sys == true)
             {
                 setUserIsAdmin(true);
