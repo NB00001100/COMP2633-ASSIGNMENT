@@ -5,7 +5,11 @@ import java.util.Scanner;
 
 
 
-// author Nimrat Brar, add names
+// author Nimrat Brar, Kushal Saini, Pelvain Dhanda
+/*
+This class displays the login info for the user and calls the login method to determine the capabilites of the user.
+The login method then either references studentInterface or AdminInterface to allow the user to use the program.
+*/
 
 public class User_interface {
 
@@ -16,13 +20,14 @@ public class User_interface {
 
     public static void main(String [] args)
     {
-        DataStore.fillAdminStorage(ImportConnector.getTextFromURL(ADMIN_FILE_ADDRESS));
-        DataStore.fillStudentStorage(ImportConnector.getTextFromURL(STUDENT_FILE_ADDRESS));
+        DataStore.fillAdminStorage(ImportConnector.getTextFromURL(ADMIN_FILE_ADDRESS)); // fills in the hashmap from the admin textfile from github
+        DataStore.fillStudentStorage(ImportConnector.getTextFromURL(STUDENT_FILE_ADDRESS)); // fills in the hashmap from the student textfile from github
         login_interface();
 
         return;
     }
 
+    /* This method displays the login information to the user and gets it and stores it from the user */
     public static void login_interface() {
 
         PrintStream output = new PrintStream(System.out);
@@ -60,6 +65,7 @@ public class User_interface {
     }
 
 
+    // This method calls the login class to determine if login was successful and whether the login information  indicates a student or administrator
     public static void login()
     {
         Login user = new Login();
@@ -84,13 +90,14 @@ public class User_interface {
             }
 
         } else {
-            System.out.println("You entered incorrect information");
+            System.out.println("You entered incorrect information please try again");
         }
 
     }
 
 
 
+    // This method prints out the course information for the array of courses passed in to the console
     public static void show_courses(Course [] courses, PrintStream output)
     {
         int counter = 0;
@@ -116,6 +123,7 @@ public class User_interface {
 
         return;
     }
+    // This method prints out information about fees for the array of fees passed in to the console
     public static void show_fees( Fees [] fees1, PrintStream output)
     {
         int counter = 0;
