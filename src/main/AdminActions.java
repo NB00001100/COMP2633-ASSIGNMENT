@@ -23,9 +23,88 @@ public class AdminActions {
     }
 
     public static void editCurrentCourses(PrintStream output, Scanner input) {
-        // remove from array and shift
+
+
+      int courseIndex = 0;
+      Student currStudent = null;
+      int option = 0;
+      String courseName = null;
+      int courseID = 0;
+
+      enterStudentInfo(output, input);
+
+
+      output.println("Would you like to add or remove a current course?");
+      output.print("Add: 1");
+      output.println();
+      output.println("Remove: 2");
+      output.print(" Enter choice: ");
+      option = input.nextInt();
+      output.println();
+      output.println();
+
+      currStudent = DataStore.findStudent(student_id, name);
+
+      courseIndex = input.nextInt();
+      int length = currStudent.getCurrentCourses().length;
+      Course[] copyCurrCourse = new Course[length];
+
+
+      if(option == 2) {
+
+          User_interface.show_courses(currStudent.getCurrentCourses(), output);
+
+          output.println(" Enter the course # you would like to change ");
+          courseIndex = input.nextInt();
+
+      for (int i = 0, j = 0; i < currStudent.getCurrentCourses().length; i++) {
+          if (i != courseIndex) {
+              copyCurrCourse[j++] = currStudent.getCurrentCourses()[i];
+          }
+      }
+
+       copyCurrCourse[length-1] = null;
 
     }
+
+
+
+      if (option == 1)
+
+      {
+
+          for (int i = 0, j = 0; i < currStudent.getCurrentCourses().length; i++) {
+
+                  copyCurrCourse[j++] = currStudent.getCurrentCourses()[i];
+              }
+
+          output.println(" Enter the course name and ID to add new course ");
+          output.println();
+          output.print(" Enter course name: ");
+          courseName = input.nextLine();
+          output.println();
+          output.print(" Enter ID of course: ");
+          courseID = input.nextInt();
+
+          Course newCourse = new Course(courseName, courseID);
+
+          int counter = 0;
+
+          while ( copyCurrCourse[counter] != null)
+          {
+
+
+              counter++;
+          }
+
+          copyCurrCourse[counter] = newCourse;
+
+      }
+
+      currStudent.setCurrentCourses(copyCurrCourse);
+
+    }
+
 
     public static void editPreviousCourses(PrintStream output, Scanner input) {
         // remove from array and shift

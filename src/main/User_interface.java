@@ -94,6 +94,8 @@ public class User_interface {
         {
             output.println();
             output.println();
+            output.println("course # " + counter);
+            output.println();
             output.print(" Course Name: ");
             output.println(courses[counter].getCourseName());
             output.println();
