@@ -3,15 +3,21 @@ package main;
 import java.io.PrintStream;
 import java.util.Scanner;
 
+
+
 // author Nimrat Brar, add names
 
 public class User_interface {
 
+    private static final String ADMIN_FILE_ADDRESS = "File:\\C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\AdminFile.txt";
+    private static final String STUDENT_FILE_ADDRESS = "File:\\C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\StudentFile.txt";
     private static int user_id = 0;
     private static String user_password = "";
 
     public static void main(String [] args)
     {
+        DataStore.fillAdminStorage(ImportConnector.getTextFromURL(ADMIN_FILE_ADDRESS));
+        DataStore.fillStudentStorage(ImportConnector.getTextFromURL(STUDENT_FILE_ADDRESS));
         login_interface();
 
         return;
@@ -21,7 +27,6 @@ public class User_interface {
 
         PrintStream output = new PrintStream(System.out);
         Scanner input = new Scanner(System.in);
-
 
         output.println(" Welcome To KPN University Student Database System ");
         output.println();
