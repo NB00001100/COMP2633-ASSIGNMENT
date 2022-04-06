@@ -1,6 +1,8 @@
 /************
 * DataStorage Class
-* This class currently allows
+* This class currently allows for the
+* student and admin hashmap storages to be filled
+* with the information from the GitHub text file
 *
 **************/
 package main;
@@ -16,6 +18,15 @@ public  class DataStore {
 
     private static HashMap<Integer, Admin> adminStorage = new HashMap<Integer, Admin>();
 
+
+
+    /*
+     * fillStudentStorage:
+     * The main method that fills the student hashmap
+     *
+     *
+     *
+     */
     public static void fillStudentStorage(String contents) {
 
         BufferedReader reader = new BufferedReader(new StringReader(contents));
@@ -104,12 +115,15 @@ public  class DataStore {
             e.printStackTrace();
         }
 
-        //System.out.println(studentStorage.toString());
+        System.out.println(studentStorage.toString());
 
     }
 
 
-
+   /*
+    * fillAdminStorage
+    * the main method which fills the admin storage
+    */
     public static void fillAdminStorage(String contents) {
 
         BufferedReader reader = new BufferedReader(new StringReader(contents));
@@ -138,18 +152,29 @@ public  class DataStore {
         }
     }
 
+
+    /**
+     * findStudent allows for students to be searched
+     * and is used in methods in AdminActions
+     *
+     */
     public static Student findStudent(int id, String name)
     {
-        Student foundStudent = null;
-
-        if(studentStorage.containsKey(id) == true)
+        if(studentStorage.containsKey(id) == true )
         {
-            return DataStore.getStudentStorage().get(id);
+             return DataStore.getStudentStorage().get(id);
         }
 
         return null;
     }
 
+
+
+
+    /**
+     * addStudentFromAdmin
+     * lets the admin add a student as a part of their actions
+     */
     public static void addStudentFromAdmin(String major, String password, String name, double gpa, int id, Course [] curr,
             Course [] past, Fees [] outstanding, Fees [] paid)
     {
@@ -162,15 +187,26 @@ public  class DataStore {
         new_student.setStudentID(id);
         new_student.setCurrentCourses(curr);
         new_student.setPastCourses(past);
+        new_student.setOutstandingFees(outstanding);
         new_student.setPaidFees(paid);
+
 
     }
 
+    /*
+     * puts the student to add in the hashmap
+     *
+     */
     public static void add_student(Student student_to_be_added)
     {
         studentStorage.put(student_to_be_added.getStudentID(), student_to_be_added);
     }
 
+    /**
+
+      remove a student from the hashmap
+
+    */
     public static void remove_student(int student_id, String Name)
     {
         if(studentStorage.containsKey(student_id)== true &&
@@ -180,14 +216,7 @@ public  class DataStore {
         }
     }
 
-    public static String createStudentFileString() {
 
-        StringBuilder contents = new StringBuilder();
-
-        studentStorage.forEach(null);
-
-        return contents.toString().trim();
-    }
 
     public static HashMap<Integer, Student> getStudentStorage() {
         return studentStorage;
