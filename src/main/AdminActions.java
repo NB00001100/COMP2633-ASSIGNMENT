@@ -18,7 +18,7 @@ public class AdminActions {
         DataStore.getStudentStorage().get(student_id).setMajor(major);
     }
 
-    public static void editCurrentCourses(PrintStream output, Scanner input) {
+  public static void editCurrentCourses(PrintStream output, Scanner input) {
 
 
       int courseIndex = 0;
@@ -41,7 +41,6 @@ public class AdminActions {
 
       currStudent = DataStore.findStudent(student_id, name);
 
-      courseIndex = input.nextInt();
       int length = currStudent.getCurrentCourses().length;
       Course[] copyCurrCourse = new Course[length];
 
@@ -54,8 +53,10 @@ public class AdminActions {
           courseIndex = input.nextInt();
 
       for (int i = 0, j = 0; i < currStudent.getCurrentCourses().length; i++) {
+
           if (i != courseIndex) {
               copyCurrCourse[j++] = currStudent.getCurrentCourses()[i];
+
           }
       }
 
@@ -69,6 +70,8 @@ public class AdminActions {
 
       {
 
+          User_interface.show_courses(currStudent.getCurrentCourses(), output);
+
           for (int i = 0, j = 0; i < currStudent.getCurrentCourses().length; i++) {
 
                   copyCurrCourse[j++] = currStudent.getCurrentCourses()[i];
@@ -81,6 +84,7 @@ public class AdminActions {
           output.println();
           output.print(" Enter ID of course: ");
           courseID = input.nextInt();
+          output.println();
 
           Course newCourse = new Course(courseName, courseID);
 
@@ -88,7 +92,6 @@ public class AdminActions {
 
           while ( copyCurrCourse[counter] != null)
           {
-
 
               counter++;
           }
@@ -103,9 +106,93 @@ public class AdminActions {
 
 
     public static void editPreviousCourses(PrintStream output, Scanner input) {
-        // remove from array and shift
+
+        int courseIndex = 0;
+        Student pastStudent = null;
+        int option = 0;
+        String courseName = null;
+        int courseID = 0;
+
+        enterStudentInfo(output, input);
+
+
+        output.println("Would you like to add or remove a previous course?");
+        output.print("Add: 1");
+        output.println();
+        output.println("Remove: 2");
+        output.print(" Enter choice: ");
+        option = input.nextInt();
+        output.println();
+        output.println();
+
+        pastStudent = DataStore.findStudent(student_id, name);
+
+        int length = pastStudent.getPastCourses().length;
+        Course[] copyPastCourse = new Course[length];
+
+
+        if(option == 2) {
+
+            User_interface.show_courses(pastStudent.getPastCourses(), output);
+
+            output.println(" Enter the course # you would like to change ");
+            courseIndex = input.nextInt();
+
+        for (int i = 0, j = 0; i < pastStudent.getPastCourses().length; i++) {
+            if (i != courseIndex) {
+                copyPastCourse[j++] = pastStudent.getPastCourses()[i];
+            }
+        }
+
+         copyPastCourse[length-1] = null;
+
+      }
+
+
+
+        if (option == 1)
+
+        {
+
+            User_interface.show_courses(pastStudent.getPastCourses(), output);
+
+            for (int i = 0, j = 0; i < pastStudent.getPastCourses().length; i++) {
+
+                    copyPastCourse[j++] = pastStudent.getPastCourses()[i];
+                }
+
+            output.println(" Enter the course name and ID to add new course ");
+            output.println();
+            output.print(" Enter course name: ");
+            courseName = input.next();
+            output.println();
+            output.print(" Enter ID of course: ");
+            courseID = input.nextInt();
+            output.println();
+
+            Course newCourse = new Course(courseName, courseID);
+
+            int counter = 0;
+
+            while ( copyPastCourse[counter] != null)
+            {
+
+                counter++;
+            }
+
+            copyPastCourse[counter] = newCourse;
+
+        }
+
+        pastStudent.setCurrentCourses(copyPastCourse);
+
+
+
+
+
 
     }
+
 
     public static void editGpa(PrintStream output, Scanner input) {
         double new_gpa = 0;
@@ -119,14 +206,175 @@ public class AdminActions {
 
     }
 
-    public static void editOutstandingFees(PrintStream output, Scanner input) {
+     public static void editOutstandingFees(PrintStream output, Scanner input) {
+
+        int courseIndex = 0;
+        Student currStudent = null;
+        int option = 0;
+        String courseName = null;
+        int courseID = 0;
+
+        enterStudentInfo(output, input);
+
+
+        output.println("Would you like to add or remove a outstanding fee?");
+        output.print("Add: 1");
+        output.println();
+        output.println("Remove: 2");
+        output.print(" Enter choice: ");
+        option = input.nextInt();
+        output.println();
+        output.println();
+
+        currStudent = DataStore.findStudent(student_id, name);
+
+        int length = currStudent.getOutstandingFees().length;
+        Fees[] copyoutFees = new Fees[length];
+
+
+        if(option == 2) {
+
+            User_interface.show_fees(currStudent.getOutstandingFees(), output);
+
+            output.println(" Enter the course # you would like to change ");
+            courseIndex = input.nextInt();
+
+        for (int i = 0, j = 0; i < currStudent.getOutstandingFees().length; i++) {
+            if (i != courseIndex) {
+                copyoutFees[j++] = currStudent.getOutstandingFees()[i];
+            }
+        }
+
+         copyoutFees[length-1] = null;
+
+      }
+
+
+
+        if (option == 1)
+
+        {
+
+            User_interface.show_fees(currStudent.getOutstandingFees(), output);
+
+            for (int i = 0, j = 0; i < currStudent.getOutstandingFees().length; i++) {
+
+                    copyoutFees[j++] = currStudent.getOutstandingFees()[i];
+                }
+
+            output.println(" Enter the course name and ID to add new fee ");
+            output.println();
+            output.print(" Enter course name: ");
+            courseName = input.next();
+            output.println();
+            output.print(" Enter ID of course: ");
+            courseID = input.nextInt();
+            output.println();
+
+            Fees newCourse = new Fees(courseName, courseID);
+
+            int counter = 0;
+
+            while ( copyoutFees[counter] != null)
+            {
+
+                counter++;
+            }
+
+            copyoutFees[counter] = newCourse;
+
+        }
+
+        currStudent.setOutstandingFees(copyoutFees);
 
     }
 
     public static void editFeesPaid(PrintStream output, Scanner input) {
-        // remove from array and shift
+
+        int courseIndex = 0;
+        Student currStudent = null;
+        int option = 0;
+        String courseName = null;
+        int courseID = 0;
+
+        enterStudentInfo(output, input);
+
+
+        output.println("Would you like to add or remove a paid fee?");
+        output.print("Add: 1");
+        output.println();
+        output.println("Remove: 2");
+        output.print(" Enter choice: ");
+        option = input.nextInt();
+        output.println();
+        output.println();
+
+        currStudent = DataStore.findStudent(student_id, name);
+
+        int length = currStudent.getPaidFees().length;
+        Fees[] copyEditFees = new Fees[length];
+
+
+        if(option == 2) {
+
+            User_interface.show_fees(currStudent.getPaidFees(), output);
+
+            output.println(" Enter the course # you would like to change ");
+            courseIndex = input.nextInt();
+
+        for (int i = 0, j = 0; i < currStudent.getPaidFees().length; i++) {
+            if (i != courseIndex) {
+                copyEditFees[j++] = currStudent.getPaidFees()[i];
+            }
+        }
+
+         copyEditFees[length-1] = null;
+
+      }
+
+
+
+        if (option == 1)
+
+        {
+
+            User_interface.show_fees(currStudent.getPaidFees(), output);
+
+            for (int i = 0, j = 0; i < currStudent.getPaidFees().length; i++) {
+
+                    copyEditFees[j++] = currStudent.getPaidFees()[i];
+                }
+
+            output.println(" Enter the course name and ID to add new fee ");
+            output.println();
+            output.print(" Enter course name: ");
+            courseName = input.next();
+            output.println();
+            output.print(" Enter ID of course: ");
+            courseID = input.nextInt();
+            output.println();
+
+            Fees newCourse = new Fees(courseName, courseID);
+
+            int counter = 0;
+
+            while ( copyEditFees[counter] != null)
+            {
+
+                counter++;
+            }
+
+            copyEditFees[counter] = newCourse;
+
+        }
+
+        currStudent.setPaidFees(copyEditFees);
+
+
+
 
     }
+
 
     public static void editStudentId(PrintStream output, Scanner input) {
         int new_studentId = 0;
