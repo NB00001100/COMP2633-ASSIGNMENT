@@ -91,7 +91,6 @@ public class AdminActions {
         String major = "";
         String password = "";
         Student new_student = new Student();
-        new_student.intializeArrays();
         int options = 0;
 
         output.println();
@@ -99,6 +98,8 @@ public class AdminActions {
         output.println(" Enter the following information for the new student");
         output.print(" New student's University ID: ");
         setStudent_id(input.nextInt());
+        if(!DataStore.getStudentStorage().containsKey(getStudent_id()))
+        {
         output.println();
         output.print(" New student's Name: ");
         setName(input.nextLine());
@@ -112,33 +113,38 @@ public class AdminActions {
         output.print(" New student's password: ");
         password = input.nextLine();
         output.println();
-        output.print(" To enter current courses enter: 2");
+        output.print(" To enter current courses enter 2: ");
         options = input.nextInt();
-        if (options == 2) {
-            int continue_adding = 1;
-            
-            while (continue_adding == 1) {
-                String courseName = "";
-                int courseId = 0;
-                output.println();
-                output.println();
-                output.print(" Enter course name: ");
-                courseName = input.nextLine();
-                output.println();
-                output.print(" Enter Course ID: ");
-                courseId = input.nextInt();
-                output.println();
-                output.print(" To stop adding current courses enter: 2");
-                new
-            }
+        if (options == 2)
+        {
+
+            add_currCourses_for_new_student( output, input,new_student);
+        }
+        output.println();
+        output.println();
+        output.print(" To enter oustanding fees enter 3: ");
+        options = input.nextInt();
+        if( options == 3)
+        {
+            add_outStanding_fees_for_new_student(output,  input,new_student);
 
         }
+
+
         new_student.setName(getName());
         new_student.setMajor(major);
         new_student.setStudentID(student_id);
         new_student.setGpa(gpa);
         new_student.setPassword(password);
 
+        DataStore.getStudentStorage().put(student_id, new_student);
+
+    }
+        else
+        {
+            output.println();
+            output.println(" This University Id already exists please enter a new one");
+        }
     }
 
     public static void removeStudent(PrintStream output, Scanner input) {
@@ -179,21 +185,57 @@ public class AdminActions {
         output.print(" Student's Name: ");
         setName(input.nextLine());
     }
+    public static void add_currCourses_for_new_student(PrintStream output, Scanner input, Student new_student)
+    {
+        int continue_adding = 1;
+        int counter = 0;
 
-    public static int getStudent_id() {
-        return student_id;
+        while (continue_adding == 1 && counter < new_student.getCurrentCourses().length) {
+            String courseName = "";
+            int courseId = 0;
+            output.println();
+            output.println();
+            output.print(" Enter course name: ");
+            courseName = input.nextLine();
+            output.println();
+            output.print(" Enter Course ID: ");
+            courseId = input.nextInt();
+            output.println();
+            output.println(" To stop adding current courses enter: 2");
+            output.println(" To continue adding to current courses enter: 1");
+            output.print(" Enter here: ");
+            continue_adding = input.nextInt();
+            new_student.getCurrentCourses()[counter].setCourseName(courseName);
+            new_student.getCurrentCourses()[counter].setCourseID(courseId);
+            counter++;
+        }
+        return;
+    }
+    public static void add_outStanding_fees_for_new_student(PrintStream output, Scanner input,Student new_student)
+    {
+
+        int continue_adding = 1;
+        int counter = 0;
+
+        while (continue_adding == 1 && counter < new_student.getOutstandingFees().length) {
+            String feeName = "";
+            int feeAmount = 0;
+            output.println();
+            output.println();
+            output.print(" Enter Fee name: ");
+            feeName = input.nextLine();
+            output.println();
+            output.print(" Enter Fee amount: ");
+            feeAmount = input.nextInt();
+            output.println();
+            output.println(" To stop adding to outstanding  fees enter: 2");
+            output.println(" To continue adding to outstanding fees enter: 1");
+            output.print(" Enter here: ");
+            continue_adding = input.nextInt();
+            new_student.getOutstandingFees()[counter].setFeeName(feeName);
+            new_student.getOutstandingFees()[counter].setFeeAmount(feeAmount);
+            counter++;
+        }
+
     }
 
-    public static void setStudent_id(int student_id) {
-        AdminActions.student_id = student_id;
-    }
-
-    public static String getName() {
-        return name;
-    }
-
-    public static void setName(String name) {
-        AdminActions.name = name;
-    }
-
-}
