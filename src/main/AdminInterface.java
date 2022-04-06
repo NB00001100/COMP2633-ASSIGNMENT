@@ -62,6 +62,9 @@ public class AdminInterface {
         {
             AdminActions.removeStudent(output,input);
         }
+        else if (options_value == 11) {
+            AdminActions.view_student_info(output, input);
+        }
         else if(options_value == 12)
         {
             output.close();
@@ -70,8 +73,8 @@ public class AdminInterface {
 
         }
 
-        output.close();
-        input.close();
+        //output.close();
+        //input.close();
         return true;
 
     }
@@ -84,17 +87,18 @@ public class AdminInterface {
         output.println(" Welcome to The administration interface ");
         output.println();
         output.println();
-        output.println(" To edit major of a student enter: 1");
-        output.println(" To edit current courses of a student enter: 2");
-        output.println(" To edit previous courses of a student enter: 3");
-        output.println(" To edit GPA of a student enter: 4");
-        output.println(" To edit Outstanding fees enter: 5");
-        output.println(" To edit fees paid enter: 6");
-        output.println(" To edit student id enter: 7");
-        output.println(" To edit student password enter 8 :");
-        output.println(" To add a new student to the Student Database System enter: 9");
-        output.println(" To remove a student from the Student DataBase System enter: 10 ");
-        output.println(" To quit enter: 12");
+        output.println(" To edit major of a student enter: ------------------------------ 1");
+        output.println(" To edit current courses of a student enter: -------------------- 2");
+        output.println(" To edit previous courses of a student enter: ------------------- 3");
+        output.println(" To edit GPA of a student enter: -------------------------------- 4");
+        output.println(" To edit Outstanding fees enter: -------------------------------- 5");
+        output.println(" To edit fees paid enter: --------------------------------------- 6");
+        output.println(" To edit student id enter: -------------------------------------- 7");
+        output.println(" To edit student password enter: -------------------------------- 8");
+        output.println(" To add a new student to the Student Database System enter: ----- 9");
+        output.println(" To remove a student from the Student DataBase System enter: ---- 10");
+        output.println(" To view a student's information enter: ------------------------- 11");
+        output.println(" To quit enter: ------------------------------------------------- 12");
         output.println();
         output.print(" Enter here: ");
         return;

@@ -21,7 +21,7 @@ public class Login {
         boolean password_in_sys = false;
 
 
-        if(ID > 200000) // student id is greater than 200000
+        if(ID >= 200000) // student id is greater than 200000
         {
 
            if(DataStore.getStudentStorage().containsKey(ID) == true)
@@ -40,7 +40,7 @@ public class Login {
                return true;
            }
         }
-        else if(ID < 200000 && ID > 100000) // admin id is between 100000 and 200000
+        else if(ID < 200000 && ID >= 100000) // admin id is between 100000 and 200000
         {
             if(DataStore.getAdminStorage().containsKey(ID) == true)
             {

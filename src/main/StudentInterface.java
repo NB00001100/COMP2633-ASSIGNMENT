@@ -47,8 +47,8 @@ public class StudentInterface {
            return false;
        }
 
-        input.close();
-        output.close();
+        //input.close();
+        //output.close();
         return true;
 
 
@@ -65,6 +65,9 @@ public class StudentInterface {
         output.print(" Student ID: ");
         output.println(DataStore.getStudentStorage().get(user_id).getStudentID());
         output.println();
+        output.print(" Password: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getPassword());
+        output.println();
         output.print(" Major: ");
         output.println(DataStore.getStudentStorage().get(user_id).getMajor());
         output.println();
@@ -72,16 +75,36 @@ public class StudentInterface {
         output.println(DataStore.getStudentStorage().get(user_id).getGpa());
         output.println();
         output.println();
-        output.println(" To view current courses enter: 1");
-        output.println(" To view past courses enter: 2");
-        output.println(" To view outstanding fees enter: 3");
-        output.println(" To view paid fees enter: 4");
-        output.println(" To leave enter: 8 ");
+        output.println(" To view current courses enter: --- 1");
+        output.println(" To view past courses enter: ------ 2");
+        output.println(" To view outstanding fees enter: -- 3");
+        output.println(" To view paid fees enter: --------- 4");
+        output.println(" To leave enter: ------------------ 8");
         output.println();
         output.print(" Enter here: ");
 
         return;
+    }
 
+    public static void info(PrintStream output, int user_id) {
+        output.println();
+        output.println();
+        output.print(" Name: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getName());
+        output.println();
+        output.print(" Student ID: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getStudentID());
+        output.println();
+        output.print(" Password: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getPassword());
+        output.println();
+        output.print(" Major: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getMajor());
+        output.println();
+        output.print(" GPA: ");
+        output.println(DataStore.getStudentStorage().get(user_id).getGpa());
+        output.println();
+        output.println();
     }
 
 

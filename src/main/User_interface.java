@@ -53,12 +53,10 @@ public class User_interface {
             System.err.println(" Please reload the application or Contact Team KPN  ");
         }
 
-        input.close();
         login();
+        input.close();
 
         return;
-
-
     }
 
 
@@ -85,6 +83,8 @@ public class User_interface {
                 run = AdminInterface.Admin_interface();
             }
 
+        } else {
+            System.out.println("You entered incorrect information");
         }
 
     }
@@ -99,13 +99,15 @@ public class User_interface {
         {
             output.println();
             output.println();
-            output.println("course # " + counter);
+            output.println(" Course # " + counter);
             output.println();
             output.print(" Course Name: ");
             output.println(courses[counter].getCourseName());
             output.println();
             output.print(" Course ID: ");
             output.print(courses[counter].getCourseID());
+            output.println();
+            output.println("------------------");
 
 
             counter++;

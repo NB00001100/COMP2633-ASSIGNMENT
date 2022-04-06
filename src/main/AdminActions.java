@@ -9,17 +9,13 @@ public class AdminActions {
 
     public static void editMajor(PrintStream output, Scanner input) {
         String major = null;
-        Student majorChanged = null;
         enterStudentInfo(output, input);
         output.println();
         output.println();
         output.println(" Enter the change in major ");
         output.print(" New major: ");
-        major = input.nextLine();
-        majorChanged = DataStore.findStudent(student_id, name);
-        majorChanged.setMajor(major);
-        DataStore.getStudentStorage().replace(student_id, majorChanged);
-
+        major = input.next();
+        DataStore.getStudentStorage().get(student_id).setMajor(major);
     }
 
     public static void editCurrentCourses(PrintStream output, Scanner input) {
@@ -81,7 +77,7 @@ public class AdminActions {
           output.println(" Enter the course name and ID to add new course ");
           output.println();
           output.print(" Enter course name: ");
-          courseName = input.nextLine();
+          courseName = input.next();
           output.println();
           output.print(" Enter ID of course: ");
           courseID = input.nextInt();
@@ -113,16 +109,13 @@ public class AdminActions {
 
     public static void editGpa(PrintStream output, Scanner input) {
         double new_gpa = 0;
-        Student gpaChanged = null;
         enterStudentInfo(output, input);
         output.println();
         output.println();
         output.println(" Enter change in GPA");
         output.print(" New GPA: ");
         new_gpa = input.nextDouble();
-        gpaChanged = DataStore.findStudent(student_id, name);
-        gpaChanged.setGpa(new_gpa);
-        DataStore.getStudentStorage().replace(student_id, gpaChanged);
+        DataStore.getStudentStorage().get(student_id).setGpa(new_gpa);
 
     }
 
@@ -138,31 +131,24 @@ public class AdminActions {
     public static void editStudentId(PrintStream output, Scanner input) {
 
         int new_studentId = 0;
-        Student IdChanged = null;
         enterStudentInfo(output, input);
         output.println();
         output.println();
         output.println(" Enter change in student ID");
         output.print(" New Student ID: ");
         new_studentId = input.nextInt();
-        IdChanged = DataStore.findStudent(new_studentId, name);
-        IdChanged.setStudentID(new_studentId);
-        DataStore.getStudentStorage().replace(student_id, IdChanged);
-
+        Student temp = new Student();
     }
 
     public static void editStudentPassword(PrintStream output, Scanner input) {
         String new_password = null;
-        Student passwordChanged = null;
         enterStudentInfo(output, input);
         output.println();
         output.println();
         output.println(" Enter change in pasword");
         output.print(" New Password: ");
-        new_password = input.nextLine();
-        passwordChanged = DataStore.findStudent(student_id, name);
-        passwordChanged.setPassword(new_password);
-        DataStore.getStudentStorage().replace(student_id, passwordChanged);
+        new_password = input.next();
+        DataStore.getStudentStorage().get(student_id).setPassword(new_password);
     }
 
     public static void addNewStudent(PrintStream output, Scanner input) {
@@ -183,16 +169,16 @@ public class AdminActions {
         {
         output.println();
         output.print(" New student's Name: ");
-        setName(input.nextLine());
+        setName(input.next());
         output.println();
         output.print(" New student's major: ");
-        major = input.nextLine();
+        major = input.next();
         output.println();
         output.print(" New student's GPA: ");
         gpa = input.nextDouble();
         output.println();
         output.print(" New student's password: ");
-        password = input.nextLine();
+        password = input.next();
         output.println();
         output.print(" To enter current courses enter 2: ");
         options = input.nextInt();
@@ -253,7 +239,7 @@ public class AdminActions {
         setStudent_id(input.nextInt());
         output.println();
         output.print(" Student's Name: ");
-        setName(input.nextLine());
+        setName(input.next());
         output.println();
         output.println();
         output.println(" To continue the removal of student enter: 1");
@@ -269,7 +255,7 @@ public class AdminActions {
 
     public static void view_student_info(PrintStream output, Scanner input) {
         enterStudentInfo(output, input);
-        StudentInterface.student_interface(student_id);
+        StudentInterface.info(output, student_id);
     }
 
     public static void enterStudentInfo(PrintStream output, Scanner input) {
@@ -280,7 +266,7 @@ public class AdminActions {
         setStudent_id(input.nextInt());
         output.println();
         output.print(" Student's Name: ");
-        setName(input.nextLine());
+        setName(input.next() + input.next());
     }
     public static void add_currCourses_for_new_student(PrintStream output, Scanner input, Student new_student)
     {
@@ -293,7 +279,7 @@ public class AdminActions {
             output.println();
             output.println();
             output.print(" Enter course name: ");
-            courseName = input.nextLine();
+            courseName = input.next();
             output.println();
             output.print(" Enter Course ID: ");
             courseId = input.nextInt();
@@ -320,7 +306,7 @@ public class AdminActions {
             output.println();
             output.println();
             output.print(" Enter Fee name: ");
-            feeName = input.nextLine();
+            feeName = input.next();
             output.println();
             output.print(" Enter Fee amount: ");
             feeAmount = input.nextInt();
