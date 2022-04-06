@@ -1,3 +1,8 @@
+/************
+* DataStorage Class
+* This class currently allows
+*
+**************/
 package main;
 
 import java.io.BufferedReader;
@@ -81,12 +86,14 @@ public  class DataStore {
 
 
 
+                /*create new student instance and add to hashmap*/
                 Student newStudent = new Student(gpa, name, major, id, passWord,overDueFee,
                         currFee, currCourses, pastCourse);
 
-
-
                 studentStorage.put(id, newStudent);
+
+
+
                 reader.readLine();
                 reader.mark(50);
 
@@ -101,28 +108,58 @@ public  class DataStore {
 
     }
 
-    public static Student findStudent(int iD, String password)
+
+
+    public static void fillAdminStorage(String contents) {
+
+        BufferedReader reader = new BufferedReader(new StringReader(contents));
+
+        try {
+            reader.mark(50);
+            while (reader.readLine() != null) {
+
+                reader.reset();
+                String currLine = reader.readLine();
+                String [] adminFields = currLine.split(":");
+
+                int id = Integer.parseInt(adminFields[0]);
+                String pass = adminFields[1];
+
+                Admin newAdmin = new Admin(id, pass);
+                adminStorage.put(id, newAdmin);
+
+                reader.readLine();
+                reader.mark(50);
+            }
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    public static Student findStudent(int id, String password)
     {
         Student foundStudent = null;
 
-        if(studentStorage.containsKey(iD) == true && studentStorage.get(iD).getPassword().equals(password) == true )
+        if(studentStorage.containsKey(id) == true && studentStorage.get(id).getPassword().equals(password) == true )
         {
-            foundStudent = studentStorage.get(iD);
+            foundStudent = studentStorage.get(id);
         }
 
         return foundStudent;
     }
 
-    public static void addStudentFromAdmin(String major, String password, String name, float gpa, int iD, Course [] curr,
+    public static void addStudentFromAdmin(String major, String password, String name, double gpa, int id, Course [] curr,
             Course [] past, Fees [] outstanding, Fees [] paid)
     {
-        Student new_student = new Student(gpa, name, name, iD, name, paid, paid, past, past);
+        Student new_student = new Student(gpa, name, name, id, name, paid, paid, past, past);
 
         new_student.setName(name);
         new_student.setMajor(major);
         new_student.setGpa(gpa);
         new_student.setPassword(password);
-        new_student.setStudentID(iD);
+        new_student.setStudentID(id);
         new_student.setCurrentCourses(curr);
         new_student.setPastCourses(past);
         new_student.setOutstandingFees(outstanding);

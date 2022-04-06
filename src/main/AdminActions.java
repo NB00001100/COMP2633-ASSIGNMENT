@@ -1,3 +1,4 @@
+package main;
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -97,6 +98,7 @@ public class AdminActions {
         output.println();
         output.println(" Enter the following information for the new student");
         output.print(" New student's University ID: ");
+
         setStudent_id(input.nextInt());
         if(!DataStore.getStudentStorage().containsKey(getStudent_id()))
         {
@@ -145,6 +147,22 @@ public class AdminActions {
             output.println();
             output.println(" This University Id already exists please enter a new one");
         }
+    }
+
+    public static int getStudent_id() {
+        return student_id;
+    }
+
+    public static void setStudent_id(int student_id) {
+        AdminActions.student_id = student_id;
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        AdminActions.name = name;
     }
 
     public static void removeStudent(PrintStream output, Scanner input) {
@@ -237,5 +255,12 @@ public class AdminActions {
             counter++;
         }
 
+
     }
+
+
+
+
+}
+
 
