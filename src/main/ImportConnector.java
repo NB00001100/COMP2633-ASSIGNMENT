@@ -13,10 +13,10 @@ import java.net.URL;
  */
 public abstract class ImportConnector {
 
-    /**
-     *
-     * @param address
-     * @return String
+    /*
+     * This method reads a text file at the inputed address (String address) and returns its contents in a String
+     * String address should be a path that also includes the name of the file accessed
+     * String address should be in URL format; for local files, use the prefix ""File:"
      */
     public static String getTextFromURL(String address) {
 

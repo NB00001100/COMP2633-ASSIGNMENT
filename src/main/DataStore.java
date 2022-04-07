@@ -114,9 +114,6 @@ public  class DataStore {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
-        System.out.println(studentStorage.toString());
-
     }
 
 

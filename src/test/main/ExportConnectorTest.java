@@ -7,7 +7,7 @@ class ExportConnectorTest {
     @Test
     void testUploadToGithub() {
 
-        ExportConnector.uploadToGithub("testijgn", "C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\testold.txt");
+        ExportConnector.uploadToGithub("testijgn", "C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\testing.txt");
 
     }
 

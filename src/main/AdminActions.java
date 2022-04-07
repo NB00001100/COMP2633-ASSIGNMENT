@@ -2,11 +2,19 @@ package main;
 import java.io.PrintStream;
 import java.util.Scanner;
 
+/*
+ * This class implements the actions the administrator is able to do
+ */
+
 public class AdminActions {
 
     private static int student_id = 0;
-    private static String name = "";
+    private static String name = ""; // name of student
 
+    /*
+     * This method prompts the user for the new major to apply to the student.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     */
     public static void editMajor(PrintStream output, Scanner input) {
         String major = null;
         enterStudentInfo(output, input);
@@ -18,6 +26,11 @@ public class AdminActions {
         DataStore.getStudentStorage().get(student_id).setMajor(major);
     }
 
+    /*
+     * This method prompts the user to add or remove a student's current courses.
+     * The user can select a course to remove or specify the details of a course to add.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     */
   public static void editCurrentCourses(PrintStream output, Scanner input) {
 
 
@@ -64,8 +77,6 @@ public class AdminActions {
 
     }
 
-
-
       if (option == 1)
 
       {
@@ -105,6 +116,11 @@ public class AdminActions {
     }
 
 
+  /*
+   * This method prompts the user to add or remove a student's previous courses.
+   * The user can select a course to remove or specify the details of a course to add.
+   * The method then calls a DataStore method to apply the change to the student in the data structure.
+   */
     public static void editPreviousCourses(PrintStream output, Scanner input) {
 
         int courseIndex = 0;
@@ -189,6 +205,10 @@ public class AdminActions {
     }
 
 
+    /*
+     * This method prompts the user for a new GPA to apply to the student.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     */
     public static void editGpa(PrintStream output, Scanner input) {
         double new_gpa = 0;
         enterStudentInfo(output, input);
@@ -201,6 +221,11 @@ public class AdminActions {
 
     }
 
+    /*
+     * This method prompts the user to add or remove a student's outstanding fees.
+     * The user can select a fee to remove or specify the details of a fee to add.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     */
      public static void editOutstandingFees(PrintStream output, Scanner input) {
 
         int courseIndex = 0;
@@ -284,6 +309,11 @@ public class AdminActions {
 
     }
 
+     /*
+      * This method prompts the user to add or remove a student's paid fees.
+      * The user can select a fee to remove or specify the details of a fee to add.
+      * The method then calls a DataStore method to apply the change to the student in the data structure.
+      */
     public static void editFeesPaid(PrintStream output, Scanner input) {
 
         int courseIndex = 0;
@@ -371,6 +401,11 @@ public class AdminActions {
     }
 
 
+    /*
+     * This method prompts the user for the new major to apply to the student.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     * If the inputed ID is already taken, an error message is printed and the user is returned to the menu.
+     */
     public static void editStudentId(PrintStream output, Scanner input) {
         int new_studentId = 0;
         enterStudentInfo(output, input);
@@ -404,6 +439,10 @@ public class AdminActions {
     }
 
 
+    /*
+     * This method prompts the user for the new password to apply to the student.
+     * The method then calls a DataStore method to apply the change to the student in the data structure.
+     */
     public static void editStudentPassword(PrintStream output, Scanner input) {
         String new_password = "";
         enterStudentInfo(output, input);
@@ -415,6 +454,10 @@ public class AdminActions {
         DataStore.getStudentStorage().get(student_id).setPassword(new_password);
     }
 
+    /*
+     * This method will prompt the user for the details of the new student.
+     * It will then call a DataStore method to add the student to the data structure.
+     */
     public static void addNewStudent(PrintStream output, Scanner input) {
 
         double gpa = 0.0;
@@ -494,6 +537,10 @@ public class AdminActions {
         AdminActions.name = name;
     }
 
+    /*
+     * This method will prompt the user for a student to remove from the system.
+     * A DataStore method is called to remove the specified student from the data structure.
+     */
     public static void removeStudent(PrintStream output, Scanner input) {
         int remove = 0;
         output.println();
@@ -522,6 +569,10 @@ public class AdminActions {
         StudentInterface.info(output, student_id);
     }
 
+    /*
+     * A helper function used by methods of this class to prompt the user for the student's ID and name
+     * student_id and name are set to the inputed values
+     */
     public static void enterStudentInfo(PrintStream output, Scanner input) {
         output.println();
         output.println();
@@ -532,11 +583,15 @@ public class AdminActions {
         output.print(" Student's Name: ");
         setName(input.next() + input.next());
     }
+
+    /*
+     * A helper function used by addNewStudent to prompt the user for courses to add to the student
+     * These courses are added to the inputed student object
+     */
     public static void add_currCourses_for_new_student(PrintStream output, Scanner input, Student new_student)
     {
         int continue_adding = 1;
         int counter = 0;
-        Course newCourse = new Course(name, counter);
 
         while (continue_adding == 1 && counter < new_student.getCurrentCourses().length) {
             String courseName = "";
@@ -555,12 +610,15 @@ public class AdminActions {
             continue_adding = input.nextInt();
             Course temp = new Course(courseName, courseId);
             new_student.getCurrentCourses()[counter] = temp;
-            //new_student.getCurrentCourses()[counter].setCourseName(courseName);
-            //new_student.getCurrentCourses()[counter].setCourseID(courseId);
             counter++;
         }
         return;
     }
+
+    /*
+     * A helper function used by addNewStudent to prompt the user for fees to add to the student
+     * These fees are added to the inputed student object
+     */
     public static void add_outStanding_fees_for_new_student(PrintStream output, Scanner input,Student new_student)
     {
 
@@ -584,7 +642,6 @@ public class AdminActions {
             continue_adding = input.nextInt();
             Fees temp = new Fees(feeName, feeAmount);
             new_student.getOutstandingFees()[counter] = temp;
-            //new_student.getOutstandingFees()[counter].setFeeAmount(feeAmount);
             counter++;
         }
 

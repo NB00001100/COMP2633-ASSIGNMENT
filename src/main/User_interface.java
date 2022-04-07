@@ -13,8 +13,8 @@ The login method then either references studentInterface or AdminInterface to al
 
 public class User_interface {
 
-    private static final String ADMIN_FILE_ADDRESS = "File:\\C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\AdminFile.txt";
-    private static final String STUDENT_FILE_ADDRESS = "File:\\C:\\Users\\kusha\\OneDrive\\Documents\\GitHub\\COMP2633-ASSIGNMENT\\res\\StudentFile.txt";
+    private static final String ADMIN_FILE_ADDRESS = "File:res\\AdminFile.txt";
+    private static final String STUDENT_FILE_ADDRESS = "File:res\\StudentFile.txt";
     private static int user_id = 0;
     private static String user_password = "";
 
@@ -23,6 +23,7 @@ public class User_interface {
         DataStore.fillAdminStorage(ImportConnector.getTextFromURL(ADMIN_FILE_ADDRESS)); // fills in the hashmap from the admin textfile from github
         DataStore.fillStudentStorage(ImportConnector.getTextFromURL(STUDENT_FILE_ADDRESS)); // fills in the hashmap from the student textfile from github
         login_interface();
+        ExportConnector.uploadToGithub(DataStore.stringifyStudent(), STUDENT_FILE_ADDRESS); // overwrites the student text file
 
         return;
     }

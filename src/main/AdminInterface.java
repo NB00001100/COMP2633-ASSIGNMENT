@@ -2,7 +2,7 @@ package main;
 
 import java.io.PrintStream;
 import java.util.Scanner;
-// This class shows the options and accepts input from the user who is administrator, to view,add,remove,or edit student's information in a system 
+// This class shows the options and accepts input from the user who is administrator, to view,add,remove,or edit student's information in a system
 public class AdminInterface {
 
 
@@ -75,9 +75,6 @@ public class AdminInterface {
             return false;
 
         }
-
-        //output.close();
-        //input.close();
         return true;
 
     }
