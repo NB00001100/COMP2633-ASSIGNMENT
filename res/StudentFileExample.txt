@@ -1,6 +1,0 @@
-200000 First Last Major GPA Password //simple fields
-courseName1, courseID1; courseName2, courseID2; //currentCourses
-courseName3, courseID3; courseName5, courseID6; //pastCourses
-feeName1, feeAmount1; feeName2, FeeAmount2; //outstandingFees
-feeName3, feeAmount3; feeName4, FeeAmount4; //FeesPaid
-//blank line. NOTE: semicolons seperate objects.
